@@ -1,0 +1,38 @@
+:root {
+  max-width: 1280px;
+  /*fonts*/
+  --fontFamily-fredoka: "Fredoka", sans-serif;
+  /*colors*/
+  --color-baseNavG: #4c4b4c;
+  --color-100: #7d94ab;
+  --color-200: #c1d7e0;
+  --color-300: rgb(149 210 243);
+  --color-400: #85c8e7;
+  --color-500: #64abd8;
+  --color-600: rgb(87 155 206);
+  --color-700: rgb(80 147 206);
+  --color-800: #519ac6;
+  --color-900: #2b5584;
+  --color-1000: rgb(54 107 171);
+  --color-2000: #172a50;
+  --color-3000: #1e233b;
+
+  --fontSize-xlarge: 40, 744;
+  --fontSize-large: 21, 744;
+  --fontSize-base: 17, 744;
+  --fontSize-small: 15, 744;
+  --fontSize-xsmall: 14, 744;
+  --fontSize-tiny: 12, 744;
+  --fontSize-xtiny: 11, 744;
+  --fontSize-xxtiny: 9, 744;
+
+  --fontWeight-bold-ultra: 800;
+  --fontWeight-bold: 700;
+  --fontWeight-semiBold: 600;
+  --fontWeight-medium: 500;
+  --fontWeight-normal: 400;
+
+  --lineHeight-big: 24;
+  --lineHeight-medium: 22;
+  --lineHeight-normal: 20;
+}

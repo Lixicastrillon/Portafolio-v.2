@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.scss";
+import { FcAdvertising } from "react-icons/fc";
+import { FaLinkedin } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io";
+import foto from "./foto.jpg";
+import NavBar from "./Components/Home/NavBar/NavBar";
+import { BarMenuCard, BarMenuItems } from "./Components/types/types";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const items: BarMenuItems[] = [
+    {
+      id: "1",
+      label: "hola",
+      icon: FcAdvertising,
+      url: "/",
+    },
+    {
+      id: "2",
+      label: "hola",
+      icon: FcAdvertising,
+      url: "/",
+    },
+  ];
+  const card: BarMenuCard = {
+    id: "card01",
+    displayName: "liced Castrillon",
+    title: "web developer",
+    photoUrl: foto,
+    infoprofile: [
+      {
+        urls: "",
+        icons: FaLinkedin,
+      },
+      {
+        urls: "",
+        icons: IoLogoGithub,
+      },
+    ],
+  };
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="navbar">
+      <NavBar items={items} card={card} />
+    </div>
+  );
 }
 
-export default App
+export default App;
