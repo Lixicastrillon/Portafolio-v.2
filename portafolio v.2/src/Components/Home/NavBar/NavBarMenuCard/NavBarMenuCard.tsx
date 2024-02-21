@@ -11,12 +11,14 @@ interface NavBarMenuCardProps {
 const NavBarMenuCard = ({ card, isExpanded }: NavBarMenuCardProps) => {
   return (
     <div className="NavBarMenuCard">
-      <img
-        className="profile"
-        alt={card.displayName}
-        src={card.photoUrl}
-        width="100%"
-      />
+      <div className="zoom">
+        <img
+          className="profile"
+          alt={card.displayName}
+          src={card.photoUrl}
+          width="100%"
+        />
+      </div>
       <div className={classNames("profileInfo", isExpanded ? "" : "collapsed")}>
         <div className="name">{card.displayName}</div>
         <div className="title">{card.title}</div>

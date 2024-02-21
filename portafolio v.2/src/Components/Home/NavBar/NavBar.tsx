@@ -23,7 +23,20 @@ const NavBar = ({ items, card }: BarMenuProps) => {
     >
       <div className="menuButton">
         <button className="hamburgerButton" onClick={handleClick}>
-          <VscMenu />
+          <div
+            onClick={handleClick}
+            className={`icon nav-icon-1 ${isExpanded ? "expanded" : ""}`}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </button>
       </div>
       <NavBarMenuCard card={card} isExpanded={isExpanded} />
