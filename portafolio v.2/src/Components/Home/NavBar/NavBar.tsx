@@ -5,8 +5,8 @@ import { useState } from "react";
 import { BarMenuItems, BarMenuCard } from "../../types/types";
 
 import classNames from "../../util/classes";
-import NavBarMenuCard from "./NavBarMenuCard";
-import NavBarMenuItem from "./NavBarMenuItem";
+import NavBarMenuCard from "./NavBarMenuCard/NavBarMenuCard";
+import NavBarMenuItem from "./NavBarMenuItem/NavBarMenuItem";
 
 interface BarMenuProps {
   items: BarMenuItems[];

@@ -1,0 +1,82 @@
+@import "../../../scss/abstracts/mixins.scss";
+@import "../../../scss/abstracts/variables.scss";
+
+.NavBarMenuItem {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  cursor: pointer;
+  a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+
+    .itemContent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      overflow: hidden;
+      white-space: nowrap;
+      @include transition(width);
+      width: 100%;
+    }
+
+    .itemContentcollapsed {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      overflow: hidden;
+      white-space: nowrap;
+      @include transition(width);
+      width: 25px;
+    }
+
+    .icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .iconT {
+      font-size: 25px;
+    }
+
+    .label {
+      margin-left: 10px;
+      overflow: hidden;
+    }
+  }
+  &:hover {
+    background-color: var(--color-600);
+  }
+
+  &:hover {
+    & + .tooltip {
+      display: inline-block;
+      animation-duration: 0.4s;
+      animation-name: tooltip;
+    }
+  }
+}
+.tooltip {
+  position: absolute;
+  background-color: var(--color-900);
+  left: 70px;
+  padding: 10px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  display: none;
+}
+
+@keyframes tooltip {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,5 +1,8 @@
-import { BarMenuItems } from "../../types/types";
-import classNames from "../../util/classes";
+import "./NavBarMenuItem.scss";
+
+import classNames from "../../../util/classes";
+
+import { BarMenuItems } from "../../../types/types";
 
 interface NavBarMenuItemProps {
   item: BarMenuItems;
@@ -11,10 +14,10 @@ const NavBarMenuItem = ({ item, isExpanded }: NavBarMenuItemProps) => {
     <div className="NavBarMenuItem">
       <a className={item.url}>
         <div
-          className={classNames("ItemContent", isExpanded ? "" : "collapsed")}
+          className={classNames("itemContent", isExpanded ? "" : "collapsed")}
         >
           <div className="icon">
-            <item.icon className="font-size:33px" />
+            <item.icon className="iconT" />
           </div>
           <span className="label">{item.label}</span>
         </div>
