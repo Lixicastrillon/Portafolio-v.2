@@ -5,9 +5,14 @@ import { IoMdPerson } from "react-icons/io";
 import { FaCheckSquare } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io";
-import foto from "./foto.jpg";
-import NavBar from "./Components/Home/NavBar/NavBar";
 import { BarMenuCard, BarMenuItems } from "./Components/types/types";
+
+import foto from "./foto.jpg";
+import NavBar from "./Components/NavBar/NavBar";
+import Home from "./Components/Home/Home";
+import Projects from "./Components/Projects/Projects";
+import AboutMe from "./Components/AboutMe/AboutMe";
+import ContactMe from "./Components/ContactMe/ContactMe";
 
 function App() {
   const items: BarMenuItems[] = [
@@ -53,8 +58,16 @@ function App() {
     ],
   };
   return (
-    <div className="navbar">
-      <NavBar items={items} card={card} />
+    <div className="App">
+      <div>
+        <NavBar items={items} card={card} />
+      </div>
+      <div className="w-100">
+        <Home />
+        <AboutMe />
+        <Projects />
+        <ContactMe />
+      </div>
     </div>
   );
 }

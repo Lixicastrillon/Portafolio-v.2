@@ -5,3 +5,8 @@
 .read-the-docs {
   color: #2b2a2a;
 }
+@media (min-width: 769px) {
+  .App {
+    display: flex;
+  }
+}

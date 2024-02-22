@@ -1,5 +1,5 @@
-@import "../../scss/abstracts/mixins.scss";
-@import "../../scss/abstracts/variables.scss";
+@import "../scss/abstracts/mixins.scss";
+@import "../scss/abstracts/variables.scss";
 /*button hambur*/
 
 /* nav-icon-1 */
@@ -91,8 +91,8 @@
 /*navbar*/
 .NavBarexpanded {
   background-color: var(--color-baseNavG);
-  position: absolute;
-  height: 100%;
+  position: fixed;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   @include transition(width);
@@ -100,8 +100,8 @@
 }
 .NavBarcollapsed {
   background-color: var(--color-baseNavG);
-  position: absolute;
-  height: 100%;
+  position: fixed;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   @include transition(width);

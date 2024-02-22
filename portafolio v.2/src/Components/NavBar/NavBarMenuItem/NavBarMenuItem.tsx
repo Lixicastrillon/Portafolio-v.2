@@ -1,8 +1,8 @@
 import "./NavBarMenuItem.scss";
 
-import classNames from "../../../util/classes";
+import classNames from "../../util/classes";
 
-import { BarMenuItems } from "../../../types/types";
+import { BarMenuItems } from "../../types/types";
 
 interface NavBarMenuItemProps {
   item: BarMenuItems;

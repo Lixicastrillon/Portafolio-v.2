@@ -1,10 +1,9 @@
 import "./NavBar.scss";
 
-import { VscMenu } from "react-icons/vsc";
 import { useState } from "react";
-import { BarMenuItems, BarMenuCard } from "../../types/types";
+import { BarMenuItems, BarMenuCard } from "../types/types";
 
-import classNames from "../../util/classes";
+import classNames from "../util/classes";
 import NavBarMenuCard from "./NavBarMenuCard/NavBarMenuCard";
 import NavBarMenuItem from "./NavBarMenuItem/NavBarMenuItem";
 
@@ -13,7 +12,7 @@ interface BarMenuProps {
   card: BarMenuCard;
 }
 const NavBar = ({ items, card }: BarMenuProps) => {
-  const [isExpanded, setIsExpanded] = useState<boolean>(true);
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const handleClick = () => {
     setIsExpanded(!isExpanded);
   };

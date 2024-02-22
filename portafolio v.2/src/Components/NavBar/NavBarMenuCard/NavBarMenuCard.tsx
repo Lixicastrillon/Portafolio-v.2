@@ -1,7 +1,7 @@
 import "./NavBarMenuCard.scss";
 
-import { BarMenuCard } from "../../../types/types";
-import classNames from "../../../util/classes";
+import { BarMenuCard } from "../../types/types";
+import classNames from "../../util/classes";
 
 interface NavBarMenuCardProps {
   card: BarMenuCard;
