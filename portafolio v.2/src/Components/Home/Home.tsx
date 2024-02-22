@@ -4,10 +4,9 @@ const Home = () => {
   return (
     <div className="full-size">
       <div className="container">
-        <h1>Perfil</h1>
-        {/* <section id="section-home" className="section-home">
+        <div id="section-home" className="section-home">
           <div className="text-zone">
-            <h1>Hola! </h1>
+            <h1>Hola!</h1>
             <br />
             <h1>Bienvenido a mi página web, soy Liced.</h1>
             <br />
@@ -29,7 +28,7 @@ const Home = () => {
             <span>scroll down</span>
             <i className="bi bi-arrow-down"></i>
           </div>
-        </section> */}
+        </div>
       </div>
     </div>
   );
