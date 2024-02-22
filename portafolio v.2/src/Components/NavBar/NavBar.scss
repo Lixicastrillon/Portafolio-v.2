@@ -96,7 +96,7 @@
   display: flex;
   flex-direction: column;
   @include transition(width);
-  width: 20%;
+  width: 15%;
 }
 .NavBarcollapsed {
   background-color: var(--color-baseNavG);
@@ -114,6 +114,6 @@
   .hamburgerButton {
     border: none;
     background: transparent;
-    padding: 5px;
+    padding: 10px;
   }
 }

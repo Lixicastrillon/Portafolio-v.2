@@ -2,7 +2,7 @@ import "./Home.scss";
 
 const Home = () => {
   return (
-    <div className="container-fluid full-size">
+    <div className="full-size">
       <div className="container">
         <h1>Perfil</h1>
         {/* <section id="section-home" className="section-home">

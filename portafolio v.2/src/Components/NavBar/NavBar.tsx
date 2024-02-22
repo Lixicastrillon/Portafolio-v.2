@@ -38,10 +38,12 @@ const NavBar = ({ items, card }: BarMenuProps) => {
           </div>
         </button>
       </div>
-      <NavBarMenuCard card={card} isExpanded={isExpanded} />
-      {items.map((item) => (
-        <NavBarMenuItem key={item.id} item={item} isExpanded={isExpanded} />
-      ))}
+      <div className="d-flex flex-column">
+        <NavBarMenuCard card={card} isExpanded={isExpanded} />
+        {items.map((item) => (
+          <NavBarMenuItem key={item.id} item={item} isExpanded={isExpanded} />
+        ))}
+      </div>
     </div>
   );
 };

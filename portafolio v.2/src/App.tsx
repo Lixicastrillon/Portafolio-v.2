@@ -59,7 +59,7 @@ function App() {
   };
   return (
     <div className="App">
-      <div>
+      <div className="NavB">
         <NavBar items={items} card={card} />
       </div>
       <div className="w-100">
