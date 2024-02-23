@@ -4,118 +4,89 @@
   width: 100%;
   height: 100vh;
 }
+
 .section-home {
   display: flex;
-  padding-left: 1.5rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0;
-  z-index: -1;
-  .text-zone h1 {
-    font-size: 3.2rem;
-    line-height: 50px;
-    letter-spacing: -3px;
-  }
-
-  .gray-text {
-    margin-top: 30px;
-    color: #a2a2a3;
-    letter-spacing: 3px;
-    font-size: 14px;
-    position: relative;
-    margin-bottom: 0;
-  }
-  /* contact me*/
-
-  .contact-button {
-    margin-top: 50px;
-    text-decoration: none;
-    width: 100%;
-    max-width: 200px;
-    height: 40px;
-    display: block;
-    line-height: 40px;
-    letter-spacing: 3px;
-    position: relative;
-    text-align: center;
-    color: #bb54cf;
-  }
-
-  .contact-button div {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .contact-button:hover span.bg {
-    width: 110%;
-  }
-  .contact-button span.bg {
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    left: -5px;
-    top: 0;
-    transition: all 0.6s ease-in-out;
-    background-color: #bb54cf;
-    transform: skewX(-19deg);
-  }
-  .contact-button span.base {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    border: 1px solid #bb54cf;
-    box-sizing: border-box;
-  }
-  .contact-button span.text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-
-  .contact-button:hover span.text {
-    color: rgb(37, 37, 37);
-  }
-}
-
-/* scroll */
-
-.scroll-down {
-  position: absolute;
-  right: -20px;
-  bottom: 50px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  transform: rotate(90deg);
-  font-size: 14px;
+
+  .text-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 70px;
+      line-height: 50px;
+      letter-spacing: -3px;
+      padding-bottom: 3%;
+    }
+    p {
+      color: #a2a2a3;
+      letter-spacing: 3px;
+      margin-bottom: 0;
+      margin-top: 2%;
+    }
+  }
 }
 
-.scroll-down-left {
-  left: -30px;
-  right: auto;
-}
+//   /* contact me*/
+//   .contact-button {
+//     margin-top: 4%;
+//     text-decoration: none;
+//     width: 100%;
+//     max-width: 200px;
+//     height: 40px;
+//     // display: block;
+//     line-height: 40px;
+//     letter-spacing: 3px;
+//     // position: relative;
+//     text-align: center;
+//     color: var(--color-500);
+//   }
 
-.scroll-down span {
-  display: inline-block;
-  animation: scroll 0.5s linear infinite alternate-reverse;
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(-7px);
-  }
-  100% {
-    transform: translateX(7px);
-  }
-}
-.scroll-down .bi-arrow-down {
-  transform: rotate(270deg) !important;
-  margin-left: 10px;
-}
+//   .contact-button div {
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden;
+//     transition: all 0.3s ease-in-out;
+//     display: flex;
+//   }
+
+//   .contact-button:hover span.bg {
+//     width: 110%;
+//   }
+//   .contact-button span.bg {
+//     position: absolute;
+//     width: 0%;
+//     height: 100%;
+//     left: -5px;
+//     top: 0;
+//     transition: all 0.6s ease-in-out;
+//     background-color: var(--color-500);
+//     transform: skewX(-19deg);
+//   }
+//   .contact-button span.base {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     left: 0;
+//     border: 1px solid var(--color-500);
+//     box-sizing: border-box;
+//   }
+//   .contact-button span.text {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//   }
+
+//   .contact-button:hover span.text {
+//     color: rgb(37, 37, 37);
+//   }
+// }
+
+// /* scroll */
