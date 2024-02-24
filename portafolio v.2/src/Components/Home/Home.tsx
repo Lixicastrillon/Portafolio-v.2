@@ -8,15 +8,17 @@ const Home = () => {
           <h1>Hola!</h1>
           <h1>Bienvenidos, soy Liced</h1>
           <h1>Web developer</h1>
-          <p>Web Full stack Developer</p>
+          <p>Full Stack Web Developer</p>
+          <a href="#" className="contact-button w-100">
+            <div className="button-cont">
+              <span className="1"></span>
+              <span className="2"></span>
+              <span className="3"></span>
+              <span className="4"></span>
+              <span className="text">Contáctame</span>
+            </div>
+          </a>
         </div>
-        <a href="#" className="contact-button w-100">
-          <div>
-            <span className="bg"></span>
-            <span className="base"></span>
-            <span className="text">Contact me</span>
-          </div>
-        </a>
       </div>
     </div>
   );
