@@ -40,10 +40,26 @@
   height: 60px;
   overflow: hidden;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  border-radius: 4px;
 }
-.button-cont:hover {
-  background: var(--color-500);
-  box-shadow: 0 0 4px var(--color-500);
+// .button-cont:hover {
+//   background: var(--color-500);
+//   box-shadow: 0 0 4px var(--color-500);
+// }
+
+.button-cont::after {
+  content: "";
+  width: 130%;
+  position: absolute;
+  top: 0;
+  left: calc(-100% - 60px);
+  border-bottom: 60px solid var(--color-500);
+  border-right: 60px solid transparent;
+  transition: 0.5s ease-in-out all;
+}
+
+.button-cont:hover::after {
+  left: 0;
 }
 .button-cont span {
   position: absolute;
@@ -118,6 +134,7 @@
   }
 }
 .contact-button span.text {
+  z-index: 2;
   padding-top: 5%;
   line-height: 40px;
   letter-spacing: 3px;
