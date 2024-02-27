@@ -1,0 +1,11 @@
+@import "../scss/abstracts/mixins.scss";
+@import "../scss/abstracts/variables.scss";
+
+.projects {
+  h1 {
+    @include titleH1;
+  }
+  p {
+    @include pG;
+  }
+}

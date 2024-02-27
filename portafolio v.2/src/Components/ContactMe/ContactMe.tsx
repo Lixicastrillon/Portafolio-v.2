@@ -4,7 +4,7 @@ const ContactMe = () => {
   return (
     <div className="container-fluid full-size">
       <div className="container">
-        <h1>Contactame</h1>;
+        <h1>Contactame</h1>
       </div>
     </div>
   );

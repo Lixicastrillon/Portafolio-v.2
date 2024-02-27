@@ -1,3 +1,22 @@
 @mixin transition($property) {
   transition: $property 0.2s ease-in-out;
 }
+
+@mixin titleH1G {
+  font-size: 70px;
+  line-height: 50px;
+  letter-spacing: -3px;
+  padding-bottom: 3%;
+}
+@mixin titleH1 {
+  font-size: 55px;
+  line-height: 50px;
+  letter-spacing: -3px;
+  padding-bottom: 2%;
+  text-align: start;
+}
+
+@mixin pG {
+  font-size: 20px;
+  text-align: start;
+}

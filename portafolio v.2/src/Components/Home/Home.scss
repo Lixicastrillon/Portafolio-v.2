@@ -1,4 +1,5 @@
 @import "../scss/abstracts/variables.scss";
+@import "../scss/abstracts/mixins.scss";
 
 .full-size {
   width: 100%;
@@ -17,10 +18,7 @@
     align-items: flex-start;
 
     h1 {
-      font-size: 70px;
-      line-height: 50px;
-      letter-spacing: -3px;
-      padding-bottom: 3%;
+      @include titleH1G;
     }
     p {
       color: #a2a2a3;
@@ -42,10 +40,6 @@
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
   border-radius: 4px;
 }
-// .button-cont:hover {
-//   background: var(--color-500);
-//   box-shadow: 0 0 4px var(--color-500);
-// }
 
 .button-cont::after {
   content: "";

@@ -64,8 +64,8 @@ function App() {
       </div>
       <div className="w-100">
         <Home />
-        <AboutMe />
         <Projects />
+        <AboutMe />
         <ContactMe />
       </div>
     </div>
