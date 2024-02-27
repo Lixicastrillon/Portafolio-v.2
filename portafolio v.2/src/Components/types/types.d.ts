@@ -14,3 +14,9 @@ export interface BarMenuCard {
   title: string;
   infoprofile: { urls: string; icons: IconType }[];
 }
+
+export interface ProjCard {
+  id: string;
+  image: string;
+  url: string;
+}

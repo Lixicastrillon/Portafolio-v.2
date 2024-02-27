@@ -8,4 +8,12 @@
   p {
     @include pG;
   }
+  .work {
+    font-size: 192px;
+    font-weight: var(--fontWeight-bold);
+    position: absolute;
+    color: var(--color-100);
+    letter-spacing: -10px;
+    z-index: -1;
+  }
 }

@@ -12,7 +12,7 @@ interface NavBarMenuItemProps {
 const NavBarMenuItem = ({ item, isExpanded }: NavBarMenuItemProps) => {
   return (
     <div className="NavBarMenuItem">
-      <a className={item.url}>
+      <a href={item.url}>
         <div
           className={classNames("itemContent", isExpanded ? "" : "collapsed")}
         >

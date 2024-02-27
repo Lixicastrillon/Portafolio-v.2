@@ -1,0 +1,12 @@
+.ProjectCard {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagesProject {
+  position: relative;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+}
