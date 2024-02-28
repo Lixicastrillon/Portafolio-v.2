@@ -6,7 +6,7 @@ const Home = () => {
       <div className="section-home h-100">
         <div className="text-zone">
           <span>
-            <h1>¡Hola!</h1>
+            <h1>¡ Hola !</h1>
             <br />
           </span>
           <h1>Bienvenidos, soy Liced</h1>
