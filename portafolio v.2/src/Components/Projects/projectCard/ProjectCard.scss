@@ -1,13 +1,17 @@
 // @import "../../scss/abstracts/variables.scss";
+.projectCard {
+  height: 250px;
+}
 .image-container {
   position: relative;
+  height: 250px;
 }
 .imagesProject {
   object-fit: fill;
   width: 350px;
   height: 250px;
   border-radius: 25px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .overlay {
   border-radius: 25px;
@@ -16,16 +20,23 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    10,
-    217,
-    245,
-    0.5
-  ); /* Color rojo con opacidad de 0.5 */
-
-  .img {
-    z-index: 1;
-    height: 10%;
-    width: 10%;
-  }
+  opacity: 0.6;
+}
+.imageoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  object-fit: contain;
+}
+.coloroverlay01 {
+  background: linear-gradient(130deg, #4400ff, rgba(2, 195, 243, 0.867));
+}
+.coloroverlay02 {
+  background: linear-gradient(130deg, #e9c709, rgba(184, 106, 18, 0.867));
+}
+.coloroverlay03 {
+  background: linear-gradient(130deg, #ad02fc, rgba(236, 72, 141, 0.867));
 }

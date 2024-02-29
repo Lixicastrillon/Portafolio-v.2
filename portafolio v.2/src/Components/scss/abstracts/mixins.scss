@@ -14,7 +14,7 @@
   line-height: 50px;
   letter-spacing: -3px;
   padding-bottom: 2%;
-  text-align: center;
+  text-align: start;
   color: var(--color-500);
   font-weight: var(--fontWeight-semiBold);
   margin-top: 3%;
@@ -22,5 +22,5 @@
 
 @mixin pG {
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
 }

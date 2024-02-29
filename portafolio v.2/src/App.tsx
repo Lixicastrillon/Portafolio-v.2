@@ -10,7 +10,7 @@ import { BarMenuCard, BarMenuItems, ProjCard } from "./Components/types/types";
 import foto from "./foto.jpg";
 import craftBeer from "./Components/Projects/CB.png";
 import axes from "./Components/Projects/images-axes/axes.jpg";
-import logo from "./Components/Projects/images-axes/logo.png";
+import logoA from "./Components/Projects/images-axes/logo.png";
 import NavBar from "./Components/NavBar/NavBar";
 import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
@@ -62,7 +62,7 @@ function App() {
   };
 
   const cardp: ProjCard[] = [
-    { id: "01", image: axes, url: "https://www.axesdev.com/", logo: logo },
+    { id: "01", image: axes, url: "https://www.axesdev.com/", logo: logoA },
     {
       id: "02",
       image: craftBeer,
@@ -70,7 +70,7 @@ function App() {
       logo: "",
     },
     {
-      id: "02",
+      id: "03",
       image: craftBeer,
       url: "https://craftbeershop.vercel.app/",
       logo: "",
