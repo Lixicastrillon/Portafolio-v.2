@@ -20,4 +20,5 @@ export interface ProjCard {
   image: string;
   url: string;
   logo: string;
+  description: string;
 }

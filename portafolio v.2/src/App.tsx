@@ -10,7 +10,7 @@ import { BarMenuCard, BarMenuItems, ProjCard } from "./Components/types/types";
 import foto from "./foto.jpg";
 import craftBeer from "./Components/Projects/CB.png";
 import axes from "./Components/Projects/images-axes/axes.jpg";
-import logoA from "./Components/Projects/images-axes/logo.png";
+import logoA from "./Components/Projects/images-axes/logow.png";
 import NavBar from "./Components/NavBar/NavBar";
 import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
@@ -62,18 +62,29 @@ function App() {
   };
 
   const cardp: ProjCard[] = [
-    { id: "01", image: axes, url: "https://www.axesdev.com/", logo: logoA },
+    {
+      id: "01",
+      image: axes,
+      url: "https://www.axesdev.com/",
+      logo: logoA,
+      description:
+        "Portafolio de servicios de soluciones de software a la medida.",
+    },
     {
       id: "02",
       image: craftBeer,
       url: "https://craftbeershop.vercel.app/",
-      logo: "",
+      logo: "CraftBeer",
+      description:
+        "Tienda online para compra y venta de cerveza artesanal, proyecto final grupal del bootcamp full stack web developer.",
     },
     {
       id: "03",
-      image: craftBeer,
+      image: "",
       url: "https://craftbeershop.vercel.app/",
-      logo: "",
+      logo: "Dogs",
+      description:
+        "Información de razas de perros, proyecto individual del bootcamp full stack web developer.",
     },
   ];
   return (

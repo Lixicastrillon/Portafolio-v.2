@@ -9,11 +9,20 @@ interface ProjectCardProps {
 const ProjectCard = ({ card }: ProjectCardProps) => {
   return (
     <div className="projectCard col-md-4 col-sm-6">
-      <div className="image-container">
+      <div className="image-container d-flex">
         <img className="imagesProject" src={card.image} />
-        <img className="imageoverlay" src={card.logo} />
+        {card.id === "01" ? (
+          <img className="imageoverlay" src={card.logo} />
+        ) : (
+          <span className="logoText">{card.logo}</span>
+        )}
+        <span className="description">{card.description}</span>
         <div className={"overlay " + "coloroverlay" + card.id}></div>
-        <a href={card.url} target="_blank"></a>
+        <button className="buttonVisita">
+          <a href={card.url} target="_blank">
+            Visita el sitio web
+          </a>
+        </button>
       </div>
     </div>
   );
