@@ -33,7 +33,7 @@ function App() {
     },
     {
       id: "3",
-      label: "Proyectos",
+      label: "Trabajos",
       icon: IoIosPeople,
       url: "/",
     },

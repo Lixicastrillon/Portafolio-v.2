@@ -11,8 +11,6 @@
   height: 250px;
   border-radius: 25px;
   opacity: 0.4;
-  transition: all 400ms ease-out;
-  will-change: transform;
 }
 .overlay {
   border-radius: 25px;
@@ -31,7 +29,6 @@
   height: 100%;
   z-index: 2;
   object-fit: contain;
-  transition: all 500ms ease-in-out;
 }
 .logoText {
   z-index: 2;
@@ -60,7 +57,6 @@
 }
 .coloroverlay01 {
   background: linear-gradient(130deg, #367eeb, #7031ac);
-  transition: all 500ms ease-in-out;
 }
 
 .coloroverlay02 {
@@ -73,12 +69,7 @@
 .image-container:hover {
   flex-direction: column;
   align-items: center;
-  .imagesProject {
-    transform: scale(1.3);
-  }
-  .imageoverlay {
-    transform: scale(1.3);
-  }
+
   .buttonVisita {
     height: 20%;
     width: 60%;
@@ -86,10 +77,16 @@
     position: absolute;
     display: block;
     z-index: 4;
-    border: solid #7031ac;
+    border: solid var(--color-400);
     border-radius: 25px;
     background: transparent;
-    font-size: 20px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a {
+      font-size: 19px;
+    }
   }
   .description {
     display: block;
@@ -112,5 +109,28 @@
 
   .imagesProject {
     display: none;
+  }
+}
+
+.buttonVisita {
+  a {
+    transition: 0.4s ease-in-out all;
+    position: absolute;
+    left: 35%;
+  }
+  .iconButton {
+    position: absolute;
+    display: none;
+    left: -35px;
+  }
+}
+
+.buttonVisita:hover {
+  a {
+    left: 20px;
+  }
+  .iconButton {
+    display: block;
+    color: var(--color-baseG);
   }
 }

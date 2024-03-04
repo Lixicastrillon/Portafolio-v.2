@@ -1,4 +1,5 @@
 import "./ProjectCard.scss";
+import { HiCursorArrowRays } from "react-icons/hi2";
 
 import { ProjCard } from "../../types/types";
 
@@ -20,7 +21,8 @@ const ProjectCard = ({ card }: ProjectCardProps) => {
         <div className={"overlay " + "coloroverlay" + card.id}></div>
         <button className="buttonVisita">
           <a href={card.url} target="_blank">
-            Visita el sitio web
+            Ver más
+            <HiCursorArrowRays className="iconButton" />
           </a>
         </button>
       </div>
