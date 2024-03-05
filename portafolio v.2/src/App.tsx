@@ -94,8 +94,9 @@ function App() {
       </div>
       <div className="w-100">
         <Home />
-        <Projects cardp={cardp} />
+        <Profile />
         <AboutMe />
+        <Projects cardp={cardp} />
         <ContactMe />
       </div>
     </div>
