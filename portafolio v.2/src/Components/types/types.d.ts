@@ -22,3 +22,11 @@ export interface ProjCard {
   logo: string;
   description: string;
 }
+
+export interface ProfileCard {
+  id: string;
+  title: string;
+  certificate: string;
+  duration: string;
+  date: string;
+}

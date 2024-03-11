@@ -1,0 +1,9 @@
+@import "../scss/abstracts/mixins.scss";
+.profile {
+  h1 {
+    @include titleH1;
+  }
+  p {
+    @include pG;
+  }
+}

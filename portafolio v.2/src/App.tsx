@@ -5,7 +5,12 @@ import { IoMdPerson } from "react-icons/io";
 import { FaCheckSquare } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io";
-import { BarMenuCard, BarMenuItems, ProjCard } from "./Components/types/types";
+import {
+  BarMenuCard,
+  BarMenuItems,
+  ProjCard,
+  ProfileCard,
+} from "./Components/types/types";
 
 import foto from "./foto.jpg";
 import craftBeer from "./Components/Projects/CB.png";
@@ -16,6 +21,7 @@ import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import ContactMe from "./Components/ContactMe/ContactMe";
+import Profile from "./Components/Profile /Profile";
 
 function App() {
   const items: BarMenuItems[] = [
@@ -87,6 +93,16 @@ function App() {
         "Información de razas de perros, proyecto individual del bootcamp full stack web developer.",
     },
   ];
+
+  const education: ProfileCard[] = [
+    {
+      id: "01",
+      title: "Full Stack Web Developer",
+      certificate: "",
+      duration: "",
+      date: "2023",
+    },
+  ];
   return (
     <div className="App">
       <div className="NavB">
@@ -94,7 +110,7 @@ function App() {
       </div>
       <div className="w-100">
         <Home />
-        <Profile />
+        <Profile education={education} />
         <AboutMe />
         <Projects cardp={cardp} />
         <ContactMe />
