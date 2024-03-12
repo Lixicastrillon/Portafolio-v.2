@@ -2,9 +2,9 @@ import "./ContactMe.scss";
 
 const ContactMe = () => {
   return (
-    <div className="container-fluid full-size">
-      <div className="container">
-        <h1>Contactame</h1>
+    <div className="contacMe container full-size d-flex flex-column align-items-center">
+      <div className="contornoH1">
+        <h1>Contáctame</h1>
       </div>
     </div>
   );

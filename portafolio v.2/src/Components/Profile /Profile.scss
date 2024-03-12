@@ -1,9 +1,33 @@
 @import "../scss/abstracts/mixins.scss";
+@import "../scss/abstracts/variables.scss";
+
+.fondoCodigo {
+  z-index: -2;
+  opacity: 0.2;
+}
 .profile {
   h1 {
     @include titleH1;
   }
-  p {
-    @include pG;
+  h3 {
+    text-align: center !important;
   }
+  h2 {
+    @include titleH2;
+  }
+}
+
+.profileCard {
+  width: 40%;
+  border-radius: 15px;
+  border: solid var(--color-500) 0.5px;
+  margin: 1%;
+}
+
+.iconP {
+  background-color: var(--color-500);
+  border-radius: 50%;
+  height: 30%;
+  width: 10%;
+  //   font-size: 30px;
 }

@@ -1,0 +1,8 @@
+@import "../scss/abstracts/mixins.scss";
+@import "../scss/abstracts/variables.scss";
+
+.contacMe {
+  h1 {
+    @include titleH1;
+  }
+}

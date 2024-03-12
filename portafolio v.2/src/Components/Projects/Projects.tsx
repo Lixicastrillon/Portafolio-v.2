@@ -10,8 +10,10 @@ const Projects = ({ cardp }: projectProps) => {
   return (
     <div className="container full-size d-flex">
       <div className="projects d-flex flex-column">
-        <div>
-          <h1>Mis Trabajos</h1>
+        <div className="d-flex flex-column align-items-center">
+          <div className="contornoH1">
+            <h1>Trabajos</h1>
+          </div>
           {/* no se traduce será parte del fondo*/}
           <div className="work">Work</div>
           <p>

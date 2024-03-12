@@ -10,8 +10,11 @@ import {
   BarMenuItems,
   ProjCard,
   ProfileCard,
+  Skills,
 } from "./Components/types/types";
 
+import Henry from "./Components/Profile /soyhenry.png";
+import inindustrial from "./Components/Profile /pregrado.jpeg";
 import foto from "./foto.jpg";
 import craftBeer from "./Components/Projects/CB.png";
 import axes from "./Components/Projects/images-axes/axes.jpg";
@@ -22,6 +25,8 @@ import Projects from "./Components/Projects/Projects";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import ContactMe from "./Components/ContactMe/ContactMe";
 import Profile from "./Components/Profile /Profile";
+import { MdComputer } from "react-icons/md";
+import { MdContentPaste } from "react-icons/md";
 
 function App() {
   const items: BarMenuItems[] = [
@@ -98,9 +103,81 @@ function App() {
     {
       id: "01",
       title: "Full Stack Web Developer",
-      certificate: "",
-      duration: "",
-      date: "2023",
+      certificate: Henry,
+      duration: "800 horas",
+      date: "08/2023",
+      icon: MdComputer,
+    },
+    {
+      id: "02",
+      title: "Ingeniera industrial",
+      certificate: inindustrial,
+      duration: "5 años",
+      date: "11/2022",
+      icon: MdContentPaste,
+    },
+  ];
+
+  const skill: Skills[] = [
+    {
+      id: "01",
+      name: "React",
+      image: "",
+    },
+    {
+      id: "02",
+      name: "Node",
+      image: "string",
+    },
+    {
+      id: "03",
+      name: "Typescript",
+      image: "string",
+    },
+    {
+      id: "04",
+      name: "Boostrap",
+      image: "",
+    },
+    {
+      id: "05",
+      name: "PostgreSQL",
+      image: "string",
+    },
+    {
+      id: "06",
+      name: "Sequelize",
+      image: "string",
+    },
+    {
+      id: "07",
+      name: "Postman",
+      image: "",
+    },
+    {
+      id: "08",
+      name: "Express",
+      image: "string",
+    },
+    {
+      id: "03",
+      name: "Redux",
+      image: "string",
+    },
+    {
+      id: "09",
+      name: "HTML",
+      image: "",
+    },
+    {
+      id: "10",
+      name: "CSS",
+      image: "string",
+    },
+    {
+      id: "11",
+      name: "Sass",
+      image: "string",
     },
   ];
   return (
@@ -111,7 +188,7 @@ function App() {
       <div className="w-100">
         <Home />
         <Profile education={education} />
-        <AboutMe />
+        <AboutMe skill={skill} />
         <Projects cardp={cardp} />
         <ContactMe />
       </div>

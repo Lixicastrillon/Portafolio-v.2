@@ -25,8 +25,15 @@ export interface ProjCard {
 
 export interface ProfileCard {
   id: string;
+  icon: IconType;
   title: string;
   certificate: string;
   duration: string;
   date: string;
+}
+
+export interface Skills {
+  id: string;
+  name: string;
+  image: string;
 }

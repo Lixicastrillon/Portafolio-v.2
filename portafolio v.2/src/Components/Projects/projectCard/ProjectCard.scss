@@ -5,17 +5,17 @@
   position: relative;
   height: 250px;
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .imagesProject {
   object-fit: fill;
   width: 100%;
   height: 250px;
-  border-radius: 25px;
+  border-radius: 15px;
   opacity: 0.3;
 }
 .overlay {
-  border-radius: 25px;
+  border-radius: 15px;
   position: absolute;
   top: 0;
   left: 0;
@@ -201,7 +201,7 @@
   width: 150%;
   position: absolute;
   top: 0;
-  left: calc(-100% - 50px);
+  left: calc(-150% - 50px);
   border-bottom: 50px solid var(--color-500);
   border-right: 50px solid transparent;
   transition: 0.5s ease-in-out;
