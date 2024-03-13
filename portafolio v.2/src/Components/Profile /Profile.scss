@@ -70,7 +70,7 @@
 .rueda1 {
   position: absolute;
   z-index: -1;
-  top: 0;
+  top: -3%;
   right: 17%;
   img {
     height: 25%;
@@ -82,24 +82,24 @@
   top: 10%;
   left: -17%;
   img {
-    height: 35%;
+    height: 40%;
   }
 }
 .rueda3 {
   position: absolute;
   z-index: -1;
-  top: -10%;
-  left: 12%;
+  top: 44%;
+  right: -22.5%;
   img {
-    height: 25%;
+    height: 40%;
   }
 }
 .rueda4 {
   position: absolute;
   z-index: -1;
-  top: -10%;
+  top: 67%;
   left: 12%;
   img {
-    height: 25%;
+    height: 35%;
   }
 }

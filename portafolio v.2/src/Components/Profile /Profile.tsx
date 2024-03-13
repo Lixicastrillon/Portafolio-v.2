@@ -3,6 +3,8 @@ import { ProfileCard } from "../types/types";
 import mueble from "./mueble.png";
 import one from "./1.png";
 import two from "./2.png";
+import three from "./3.png";
+import four from "./4.png";
 
 interface ProfileCardProps {
   education: ProfileCard[];
@@ -39,9 +41,12 @@ const Profile = ({ education }: ProfileCardProps) => {
       <div className="rueda2 h-100">
         <img src={two} />
       </div>
-      {/* <div className="rueda3 h-100">
+      <div className="rueda3 h-100">
         <img src={three} />
-      </div> */}
+      </div>
+      <div className="rueda4 h-100">
+        <img src={four} />
+      </div>
     </div>
   );
 };
