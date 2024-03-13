@@ -5,12 +5,14 @@ const Home = () => {
     <div className="container full-size Home">
       <div className="section-home h-100">
         <div className="text-zone">
-          <span>
-            <h1>¡ Hola !</h1>
+          <span className="titleBue">
+            <h1>¡ Hola ! 👩🏼‍💻</h1>
             <br />
           </span>
           <h1>Bienvenidos, soy Liced</h1>
-          <h1>Web developer</h1>
+          <span className="titleBue">
+            <h1>Web developer</h1>
+          </span>
           <p>Full Stack Web Developer</p>
           <a href="#" className="contact-button w-100">
             <div className="button-cont">

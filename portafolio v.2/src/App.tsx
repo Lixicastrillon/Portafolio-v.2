@@ -104,17 +104,17 @@ function App() {
       id: "01",
       title: "Full Stack Web Developer",
       certificate: Henry,
-      duration: "800 horas",
-      date: "08/2023",
-      icon: MdComputer,
+      duration:
+        "Este programa abarcó un total de 800 horas de aprendizaje práctico y teórico. Mi fecha de graduación en agosto de 2023 marcó el comienzo de mi trayectoria como desarrolladora.",
+      icon: "👩🏼‍💻",
     },
     {
       id: "02",
-      title: "Ingeniera industrial",
+      title: "Ingeniería industrial",
       certificate: inindustrial,
-      duration: "5 años",
-      date: "11/2022",
-      icon: MdContentPaste,
+      duration:
+        "Mi pregrado abarcó 5 años de dedicación y aprendizaje continuo. Mi formación en esta disciplina me proporcionó multiples habilidades, obtenido en noviembre del 2022.",
+      icon: "👷🏼‍♀️",
     },
   ];
 

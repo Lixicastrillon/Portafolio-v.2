@@ -97,6 +97,7 @@
   flex-direction: column;
   @include transition(width);
   width: 15%;
+  z-index: 999;
 }
 .NavBarcollapsed {
   background-color: var(--color-baseNavG);
@@ -106,6 +107,7 @@
   flex-direction: column;
   @include transition(width);
   width: 68px;
+  z-index: 999;
 }
 
 .menuButton {
