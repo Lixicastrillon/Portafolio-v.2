@@ -2,6 +2,8 @@
 @import "../scss/abstracts/variables.scss";
 
 .about {
+  position: relative;
+  z-index: 2;
   h1 {
     @include titleH1;
   }
@@ -12,4 +14,46 @@
 
 .contornoH1 {
   @include contornoH1;
+}
+.box-tecn {
+  background: rgb(32, 31, 32);
+  border-radius: 15px;
+  padding: 1%;
+  border: solid var(--color-500) thin;
+}
+.skills {
+  margin: 2%;
+  flex-grow: 1;
+  flex-basis: 200;
+}
+
+.icon-tecn {
+  margin-right: 15%;
+}
+
+.icons-tech {
+  font-size: 30px;
+  color: var(--color-500);
+}
+
+.text-tecn {
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.fondo {
+  z-index: -1;
+  position: absolute;
+  right: -22%;
+}
+.image-fondo {
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+.about1 {
+  display: flex;
+}
+.w-45 {
+  width: 45%;
 }

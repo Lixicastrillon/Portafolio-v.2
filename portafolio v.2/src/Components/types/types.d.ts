@@ -27,12 +27,11 @@ export interface ProfileCard {
   id: string;
   icon: string;
   title: string;
-  certificate: string;
   duration: string;
 }
 
 export interface Skills {
   id: string;
   name: string;
-  image: string;
+  icon: IconType;
 }

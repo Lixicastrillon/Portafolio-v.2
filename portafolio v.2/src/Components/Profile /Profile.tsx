@@ -26,7 +26,6 @@ const Profile = ({ education }: ProfileCardProps) => {
             <span className="iconP">{card.icon}</span>
             <h2 className="titleH2">{card.title}</h2>
             <div className="elementp">
-              {/* <img src={card.certificate} /> */}
               <p>{card.duration}</p>
             </div>
           </div>

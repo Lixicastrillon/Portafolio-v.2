@@ -5,6 +5,20 @@ import { IoMdPerson } from "react-icons/io";
 import { FaCheckSquare } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io";
+import { RiReactjsLine } from "react-icons/ri";
+import { TbBrandNodejs } from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiPostgresql } from "react-icons/si";
+import { BsBootstrap } from "react-icons/bs";
+import { BiLogoJavascript } from "react-icons/bi";
+import { ImHtmlFive2 } from "react-icons/im";
+import { SiSequelize } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+
 import {
   BarMenuCard,
   BarMenuItems,
@@ -13,8 +27,6 @@ import {
   Skills,
 } from "./Components/types/types";
 
-import Henry from "./Components/Profile /soyhenry.png";
-import inindustrial from "./Components/Profile /pregrado.jpeg";
 import foto from "./foto.jpg";
 import craftBeer from "./Components/Projects/CB.png";
 import axes from "./Components/Projects/images-axes/axes.jpg";
@@ -25,8 +37,6 @@ import Projects from "./Components/Projects/Projects";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import ContactMe from "./Components/ContactMe/ContactMe";
 import Profile from "./Components/Profile /Profile";
-import { MdComputer } from "react-icons/md";
-import { MdContentPaste } from "react-icons/md";
 
 function App() {
   const items: BarMenuItems[] = [
@@ -103,7 +113,6 @@ function App() {
     {
       id: "01",
       title: "Full Stack Web Developer",
-      certificate: Henry,
       duration:
         "Este programa abarcó un total de 800 horas de aprendizaje práctico y teórico. Mi fecha de graduación en agosto de 2023 marcó el comienzo de mi trayectoria como desarrolladora.",
       icon: "👩🏼‍💻",
@@ -111,7 +120,6 @@ function App() {
     {
       id: "02",
       title: "Ingeniería industrial",
-      certificate: inindustrial,
       duration:
         "Mi pregrado abarcó 5 años de dedicación y aprendizaje continuo. Mi formación en esta disciplina me proporcionó multiples habilidades, obtenido en noviembre del 2022.",
       icon: "👷🏼‍♀️",
@@ -121,63 +129,68 @@ function App() {
   const skill: Skills[] = [
     {
       id: "01",
+      name: "JavaScript",
+      icon: BiLogoJavascript,
+    },
+    {
+      id: "01",
       name: "React",
-      image: "",
+      icon: RiReactjsLine,
     },
     {
       id: "02",
       name: "Node",
-      image: "string",
+      icon: TbBrandNodejs,
     },
     {
       id: "03",
       name: "Typescript",
-      image: "string",
+      icon: BiLogoTypescript,
     },
     {
       id: "04",
-      name: "Boostrap",
-      image: "",
+      name: "Bootstrap",
+      icon: BsBootstrap,
     },
     {
       id: "05",
       name: "PostgreSQL",
-      image: "string",
+      icon: SiPostgresql,
     },
     {
       id: "06",
       name: "Sequelize",
-      image: "string",
+      icon: SiSequelize,
     },
     {
       id: "07",
       name: "Postman",
-      image: "",
+      icon: SiPostman,
     },
     {
       id: "08",
       name: "Express",
-      image: "string",
+      icon: SiExpress,
     },
     {
       id: "03",
       name: "Redux",
-      image: "string",
+      icon: SiRedux,
     },
     {
       id: "09",
       name: "HTML",
-      image: "",
+      icon: ImHtmlFive2,
     },
     {
       id: "10",
       name: "CSS",
-      image: "string",
+      icon: FaCss3Alt,
     },
     {
       id: "11",
       name: "Sass",
-      image: "string",
+      icon: FaSass,
     },
   ];
   return (
