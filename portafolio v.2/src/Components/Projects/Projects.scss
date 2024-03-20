@@ -6,6 +6,7 @@
     @include titleH1;
   }
   p {
+    margin-bottom: 7% !important;
     @include pG;
   }
   .work {
@@ -14,6 +15,8 @@
     position: absolute;
     color: var(--color-100);
     letter-spacing: -10px;
-    z-index: -1;
+    z-index: 1;
+    right: 7%;
+    opacity: 0.3;
   }
 }

@@ -15,24 +15,24 @@ const AboutMe = ({ skill }: AboutProps) => {
       </div>
       <div className="about1 w-100 d-flex justify-content-between">
         <div className="w-45">
-          <p>
+          <p className="box-description">
             Aquí encontraras información sobre mis habilidades actuales en
-            términos de programación, estoy comprometido con el aprendizaje
+            términos de programación, estoy comprometida con el aprendizaje
             continuo y el crecimiento en este campo dinámico. Poseo habilidades
             fundamentales que me permiten abordar desafíos con determinación y
             buscar oportunidades para mejorar constantemente mi conjunto de
             habilidades.
           </p>
         </div>
-        <div className="w-45">
+        <div className="w-45 mt">
           <div className="box-tecn  d-flex flex-wrap">
             {skill.map((icon) => (
-              <div className="skills d-flex" key={icon.id}>
+              <div className="skills d-flex w-25 " key={icon.id}>
                 <div className="icon-tecn">
                   <icon.icon className="icons-tech" />
                 </div>
                 <div className="text-tecn">
-                  <h3>{icon.name}</h3>
+                  <h4>{icon.name}</h4>
                 </div>
               </div>
             ))}

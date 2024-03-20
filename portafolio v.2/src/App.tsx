@@ -32,6 +32,7 @@ import craftBeer from "./Components/Projects/CB.png";
 import axes from "./Components/Projects/images-axes/axes.jpg";
 import logoA from "./Components/Projects/images-axes/logow.png";
 import NavBar from "./Components/NavBar/NavBar";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
 import AboutMe from "./Components/AboutMe/AboutMe";
@@ -44,25 +45,25 @@ function App() {
       id: "1",
       label: "Perfil",
       icon: IoMdPerson,
-      url: "/",
+      url: "/profile",
     },
     {
       id: "2",
       label: "Habilidades",
       icon: FaCheckSquare,
-      url: "/",
+      url: "/skills",
     },
     {
       id: "3",
       label: "Trabajos",
       icon: IoIosPeople,
-      url: "/",
+      url: "/works",
     },
     {
       id: "4",
       label: "Contáctame",
       icon: BsFillEnvelopeArrowDownFill,
-      url: "/",
+      url: "/contactme",
     },
   ];
   const card: BarMenuCard = {
@@ -194,18 +195,23 @@ function App() {
     },
   ];
   return (
-    <div className="App">
-      <div className="NavB">
-        <NavBar items={items} card={card} />
+    <Router>
+      <div className="App">
+        <div className="NavB">
+          <NavBar items={items} card={card} />
+        </div>
+        <div className="w-100">
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/education"
+            element={<Profile education={education} />}
+          />
+          <Route path="/skills" element={<AboutMe skill={skill} />} />
+          <Route path="/works" element={<Projects cardp={cardp} />} />
+          <Route path="/contactme" element={<ContactMe />} />
+        </div>
       </div>
-      <div className="w-100">
-        <Home />
-        <Profile education={education} />
-        <AboutMe skill={skill} />
-        <Projects cardp={cardp} />
-        <ContactMe />
-      </div>
-    </div>
+    </Router>
   );
 }
 
