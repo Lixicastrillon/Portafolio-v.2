@@ -13,6 +13,7 @@ export interface BarMenuCard {
   photoUrl: string;
   title: string;
   infoprofile: { urls: string; icons: IconType }[];
+  url: string;
 }
 
 export interface ProjCard {

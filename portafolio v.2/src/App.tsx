@@ -44,28 +44,29 @@ import industrial from "./Components/Profile /ingindustrial.jpg";
 function App() {
   const items: BarMenuItems[] = [
     {
+      id: "3",
+      label: "Trabajos",
+      icon: IoIosPeople,
+      url: "#works",
+    },
+    {
       id: "1",
       label: "Perfil",
       icon: IoMdPerson,
-      url: "/education",
+      url: "#education",
     },
     {
       id: "2",
       label: "Habilidades",
       icon: FaCheckSquare,
-      url: "/skills",
+      url: "#skills",
     },
-    {
-      id: "3",
-      label: "Trabajos",
-      icon: IoIosPeople,
-      url: "/works",
-    },
+
     {
       id: "4",
       label: "Contáctame",
       icon: BsFillEnvelopeArrowDownFill,
-      url: "/contactme",
+      url: "#contactme",
     },
   ];
   const card: BarMenuCard = {
@@ -73,13 +74,14 @@ function App() {
     displayName: "Liced Castrillon",
     title: "Web developer",
     photoUrl: foto,
+    url: "#home",
     infoprofile: [
       {
-        urls: "",
+        urls: "https://www.linkedin.com/in/lixicastrillon/",
         icons: RiLinkedinFill,
       },
       {
-        urls: "",
+        urls: "https://github.com/Lixicastrillon",
         icons: IoLogoGithub,
       },
     ],
@@ -204,11 +206,21 @@ function App() {
         <NavBar items={items} card={card} />
       </div>
       <div className="w-100">
-        <Home />
-        <Profile education={education} />
-        <AboutMe skill={skill} />
-        <Projects cardp={cardp} />
-        <ContactMe />
+        <div id="home">
+          <Home />
+        </div>
+        <div id="works">
+          <Projects cardp={cardp} />
+        </div>
+        <div id="education">
+          <Profile education={education} />
+        </div>
+        <div id="skills">
+          <AboutMe skill={skill} />
+        </div>
+        <div id="contactme">
+          <ContactMe />
+        </div>
       </div>
     </div>
   );

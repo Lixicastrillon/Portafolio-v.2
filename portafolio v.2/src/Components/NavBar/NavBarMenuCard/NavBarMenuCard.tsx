@@ -12,12 +12,14 @@ const NavBarMenuCard = ({ card, isExpanded }: NavBarMenuCardProps) => {
   return (
     <div className="NavBarMenuCard">
       <div className="zoom">
-        <img
-          className="profile"
-          alt={card.displayName}
-          src={card.photoUrl}
-          width="100%"
-        />
+        <a href={card.url}>
+          <img
+            className="profile"
+            alt={card.displayName}
+            src={card.photoUrl}
+            width="100%"
+          />
+        </a>
       </div>
       <div className={classNames("profileInfo", isExpanded ? "" : "collapsed")}>
         <div className="name">{card.displayName}</div>
@@ -25,7 +27,7 @@ const NavBarMenuCard = ({ card, isExpanded }: NavBarMenuCardProps) => {
         <div className="icons">
           {card.infoprofile.map((arg) => (
             <div className="icon">
-              <a href={arg.urls}>
+              <a href={arg.urls} target="_blank">
                 <arg.icons className="iconT" />
               </a>
             </div>
