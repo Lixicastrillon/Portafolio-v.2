@@ -38,6 +38,8 @@ import Projects from "./Components/Projects/Projects";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import ContactMe from "./Components/ContactMe/ContactMe";
 import Profile from "./Components/Profile /Profile";
+import software from "./Components/Profile /software.jpg";
+import industrial from "./Components/Profile /ingindustrial.jpg";
 
 function App() {
   const items: BarMenuItems[] = [
@@ -45,7 +47,7 @@ function App() {
       id: "1",
       label: "Perfil",
       icon: IoMdPerson,
-      url: "profile",
+      url: "education",
     },
     {
       id: "2",
@@ -117,6 +119,7 @@ function App() {
       duration:
         "Este programa abarcó un total de 800 horas de aprendizaje práctico y teórico. Mi fecha de graduación en agosto de 2023 marcó el comienzo de mi trayectoria como desarrolladora.",
       icon: "👩🏼‍💻",
+      image: software,
     },
     {
       id: "02",
@@ -124,6 +127,7 @@ function App() {
       duration:
         "Mi pregrado abarcó 5 años de dedicación y aprendizaje continuo. Mi formación en esta disciplina me proporcionó multiples habilidades, obtenido en noviembre del 2022.",
       icon: "👷🏼‍♀️",
+      image: industrial,
     },
   ];
 

@@ -28,6 +28,7 @@ export interface ProfileCard {
   icon: string;
   title: string;
   duration: string;
+  image: string;
 }
 
 export interface Skills {
