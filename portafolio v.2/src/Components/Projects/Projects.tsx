@@ -15,7 +15,7 @@ const Projects = ({ cardp }: projectProps) => {
             <h1>Trabajos</h1>
           </div>
           {/* no se traduce será parte del fondo*/}
-          <div className="work">Work</div>
+          <div className="work">Works</div>
           <p>
             He tenido el privilegio de formar parte de equipos que contribuyeron
             significativamente a mi desarrollo profesional en el ámbito del
