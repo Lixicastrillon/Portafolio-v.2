@@ -39,9 +39,7 @@ const AboutMe = ({ skill }: AboutProps) => {
           </div>
         </div>
       </div>
-      <div className="fondo h-100">
-        <img src={fondo} className="image-fondo" />
-      </div>
+      <div className="fondo h-100"></div>
     </div>
   );
 };
