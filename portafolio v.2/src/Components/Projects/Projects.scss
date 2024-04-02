@@ -2,21 +2,28 @@
 @import "../scss/abstracts/variables.scss";
 
 .projects {
+  background: rgb(37, 37, 37);
   h1 {
     @include titleH1;
   }
   p {
     margin-bottom: 7% !important;
     @include pG;
+    background: rgb(37, 37, 37);
   }
   .work {
-    font-size: 192px;
+    font-size: 180px;
     font-weight: var(--fontWeight-bold);
     position: absolute;
     color: var(--color-100);
     letter-spacing: -10px;
-    z-index: 1;
-    right: 7%;
+    right: -5%;
+    bottom: -55%;
     opacity: 0.3;
+    transform: rotate(-90deg);
+  }
+  .cardsProjects {
+    background: rgb(37, 37, 37);
+    margin-bottom: 13%;
   }
 }

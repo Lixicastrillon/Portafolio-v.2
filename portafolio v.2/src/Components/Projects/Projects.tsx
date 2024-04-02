@@ -8,14 +8,14 @@ interface projectProps {
 
 const Projects = ({ cardp }: projectProps) => {
   return (
-    <div className="container full-size d-flex">
-      <div className="projects d-flex flex-column">
+    <div className="container d-flex">
+      <div className="projects d-flex flex-column z-3">
         <div className="d-flex flex-column align-items-center">
           <div className="contornoH1">
             <h1>Trabajos</h1>
           </div>
-          {/* no se traduce será parte del fondo*/}
           <div className="work">Works</div>
+          {/* no se traduce será parte del fondo*/}
           <p>
             He tenido el privilegio de formar parte de equipos que contribuyeron
             significativamente a mi desarrollo profesional en el ámbito del

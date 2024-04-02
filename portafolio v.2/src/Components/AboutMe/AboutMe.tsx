@@ -1,8 +1,6 @@
 import "./AboutMe.scss";
 import { Skills } from "../types/types";
 
-import fondo from "./fondo.jpg";
-
 interface AboutProps {
   skill: Skills[];
 }

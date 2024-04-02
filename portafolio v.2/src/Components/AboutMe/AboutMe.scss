@@ -4,6 +4,7 @@
 .about {
   position: relative;
   z-index: 2;
+  background: rgb(37, 37, 37);
   h1 {
     @include titleH1;
   }

@@ -44,7 +44,7 @@ import industrial from "./Components/Profile /ingindustrial.jpg";
 particlesJS({
   particles: {
     number: {
-      value: 80,
+      value: 60,
       density: {
         enable: true,
         value_area: 800,
@@ -69,7 +69,7 @@ particlesJS({
       },
     },
     opacity: {
-      value: 0.5,
+      value: 0.4,
       random: false,
       anim: {
         enable: false,
@@ -90,9 +90,9 @@ particlesJS({
     },
     line_linked: {
       enable: true,
-      distance: 150,
+      distance: 140,
       color: "#ffffff",
-      opacity: 0.4,
+      opacity: 0.3,
       width: 1,
     },
     move: {

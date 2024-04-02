@@ -20,6 +20,7 @@
   // box-shadow: var(--color-500) 0px 0px 4px 1px inset;
   margin-top: 7%;
   margin-bottom: 7%;
+  z-index: 3;
 }
 @mixin titleH1 {
   font-size: 55px;
