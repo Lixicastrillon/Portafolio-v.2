@@ -15,7 +15,7 @@ const Profile = ({ education }: ProfileCardProps) => {
         {education.map((card) => (
           <div
             key={card.id}
-            className="profession d-flex row justify-content-center w-75"
+            className="profession d-flex row justify-content-center w-75 z-3"
           >
             <img src={card.image} className="image-software w-100 p-2" />
             <div className="profesion-description w-100 p-4 d-flex flex-column justify-content-center align-items-center ">
