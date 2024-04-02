@@ -1,5 +1,6 @@
 import "./AboutMe.scss";
 import { Skills } from "../types/types";
+import classNames from "../util/classes";
 
 interface AboutProps {
   skill: Skills[];
@@ -9,7 +10,7 @@ const AboutMe = ({ skill }: AboutProps) => {
   return (
     <div className="about container full-size d-flex flex-column align-items-center">
       <div className="contornoH1">
-        <h1>habilidades</h1>
+        <h1>Habilidades</h1>
       </div>
       <div className="about1 w-100 d-flex justify-content-between">
         <div className="w-45 mt-5">
@@ -22,18 +23,21 @@ const AboutMe = ({ skill }: AboutProps) => {
             habilidades.
           </p>
         </div>
-        <div className="w-50">
+        <div className="w-45">
           <div className="d-flex  justify-content-center containerTecnology">
             {skill.map((icon) => (
               <div
-                className="d-flex flex-column align-items-center justify-content-center cardTecnology"
-                key={icon.id}
+                className={
+                  "d-flex flex-column align-items-center justify-content-center cardTecnology style" +
+                  icon.id
+                }
+                key={icon.name}
               >
                 <div className="icon-tecn">
                   <icon.icon className="icons-tech" />
                 </div>
                 <div className="text-tecn">
-                  <h5>{icon.name}</h5>
+                  <h4>{icon.name}</h4>
                 </div>
               </div>
             ))}

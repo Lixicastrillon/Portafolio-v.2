@@ -246,70 +246,70 @@ function App() {
 
   const skill: Skills[] = [
     {
-      id: "#01",
+      id: "01",
       name: "JavaScript",
       icon: BiLogoJavascript,
     },
-    // {
-    //   id: "01",
-    //   name: "React",
-    //   icon: RiReactjsLine,
-    // },
-    // {
-    //   id: "02",
-    //   name: "Node",
-    //   icon: TbBrandNodejs,
-    // },
-    // {
-    //   id: "03",
-    //   name: "Typescript",
-    //   icon: BiLogoTypescript,
-    // },
-    // {
-    //   id: "04",
-    //   name: "Bootstrap",
-    //   icon: BsBootstrap,
-    // },
-    // {
-    //   id: "05",
-    //   name: "PostgreSQL",
-    //   icon: SiPostgresql,
-    // },
-    // {
-    //   id: "06",
-    //   name: "Sequelize",
-    //   icon: SiSequelize,
-    // },
-    // {
-    //   id: "07",
-    //   name: "Postman",
-    //   icon: SiPostman,
-    // },
-    // {
-    //   id: "08",
-    //   name: "Express",
-    //   icon: SiExpress,
-    // },
-    // {
-    //   id: "03",
-    //   name: "Redux",
-    //   icon: SiRedux,
-    // },
-    // {
-    //   id: "09",
-    //   name: "HTML",
-    //   icon: ImHtmlFive2,
-    // },
-    // {
-    //   id: "10",
-    //   name: "CSS",
-    //   icon: FaCss3Alt,
-    // },
-    // {
-    //   id: "11",
-    //   name: "Sass",
-    //   icon: FaSass,
-    // },
+    {
+      id: "02",
+      name: "React",
+      icon: RiReactjsLine,
+    },
+    {
+      id: "03",
+      name: "Node",
+      icon: TbBrandNodejs,
+    },
+    {
+      id: "04",
+      name: "Typescript",
+      icon: BiLogoTypescript,
+    },
+    {
+      id: "05",
+      name: "Bootstrap",
+      icon: BsBootstrap,
+    },
+    {
+      id: "06",
+      name: "PostgreSQL",
+      icon: SiPostgresql,
+    },
+    {
+      id: "07",
+      name: "Sequelize",
+      icon: SiSequelize,
+    },
+    {
+      id: "08",
+      name: "Postman",
+      icon: SiPostman,
+    },
+    {
+      id: "09",
+      name: "Express",
+      icon: SiExpress,
+    },
+    {
+      id: "10",
+      name: "Redux",
+      icon: SiRedux,
+    },
+    {
+      id: "11",
+      name: "HTML",
+      icon: ImHtmlFive2,
+    },
+    {
+      id: "12",
+      name: "CSS",
+      icon: FaCss3Alt,
+    },
+    {
+      id: "13",
+      name: "Sass",
+      icon: FaSass,
+    },
   ];
   return (
     <div className="App">
