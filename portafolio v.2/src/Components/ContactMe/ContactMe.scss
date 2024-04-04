@@ -2,7 +2,129 @@
 @import "../scss/abstracts/variables.scss";
 
 .contacMe {
+  position: relative;
   h1 {
     @include titleH1;
+    -webkit-text-fill-color: var(--color-800) !important;
+    border-bottom: 1px solid var(--color-800);
+  }
+  p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    z-index: 4;
+  }
+}
+.containerContactme {
+  background: var(--color-base);
+  border-radius: 15px;
+}
+.cont-H1 {
+  margin-top: 7%;
+  margin-bottom: 4%;
+}
+.text-p {
+  border-radius: 15px;
+  background: var(--color-base);
+}
+
+.cont-name {
+  @include Style-Contactme;
+}
+
+.cont-email {
+  @include Style-Contactme;
+}
+.cont-message {
+  @include Style-Contactme;
+}
+.la-c {
+  color: #c1d7e0;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 2%;
+}
+.ic {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #c1d7e0;
+}
+.ic:focus {
+  background: transparent;
+  border-color: aqua;
+
+  .la-c {
+    color: rgb(199, 34, 34);
+  }
+}
+/*boton */
+.button-Cont {
+  display: flex;
+  justify-content: center;
+}
+.button-me {
+  overflow: hidden;
+  height: 6%;
+  width: 13%;
+  transition: width 0.4s;
+  top: 82%;
+  position: absolute;
+  display: block;
+  z-index: 2;
+  border: 0.5px solid var(--color-500);
+  border-radius: 25px;
+  background: transparent;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.button-me::after {
+  z-index: -2;
+  content: "";
+  width: 150%;
+  position: absolute;
+  top: 0;
+  left: calc(-150% - 50px);
+  border-bottom: 60px solid var(--color-500);
+  border-right: 60px solid transparent;
+  transition: 0.5s ease-in-out;
+}
+.button-me:hover::after {
+  left: 0;
+}
+
+.button-me {
+  .text-send {
+    transition: 0.3s ease-in-out all;
+    position: absolute;
+    left: 28%;
+    font-size: 25px;
+    color: var(--color-400);
+    font-weight: var(--fontWeight-medium);
+  }
+  .icon-Button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    transition: 0.3s ease-in-out all;
+    opacity: 0;
+    font-size: 20px;
+  }
+}
+
+.button-me:hover {
+  height: 6%;
+  width: 15% !important;
+  .text-send {
+    left: 25px;
+    color: #2b2a2a;
+  }
+  .icon-Button {
+    left: calc(100% - 50px);
+    opacity: 1;
+    color: #2b2a2a;
   }
 }

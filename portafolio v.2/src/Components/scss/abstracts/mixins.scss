@@ -45,3 +45,8 @@
 //   text-align: center;
 //   color: var(--color-500);
 // }
+
+@mixin Style-Contactme {
+  position: relative;
+  font-size: 20px;
+}
