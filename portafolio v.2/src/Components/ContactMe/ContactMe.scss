@@ -44,19 +44,39 @@
   font-size: 22px;
   margin-bottom: 2%;
 }
-.ic {
+
+.form-control {
   background: transparent;
   border: 0;
   border-bottom: 1px solid #c1d7e0;
+  color: var(--color-500);
+  background-color: transparent;
+  border: 2px solid var(--color-500);
+  color: var(--color-white);
+  border-radius: 0%;
+  border: solid 1px var(--color-base);
 }
-.ic:focus {
-  background: transparent;
-  border-color: aqua;
 
-  .la-c {
-    color: rgb(199, 34, 34);
-  }
+input[type="text"]:focus {
+  background-color: var(--color-base);
+  color: var(--color-white);
 }
+
+input[type="email"]:focus {
+  background-color: var(--color-base);
+  color: var(--color-white);
+}
+
+input[type="email"]:focus {
+  background-color: var(--color-base);
+  color: var(--color-white);
+}
+
+textarea[type="text"]:focus {
+  background-color: var(--color-base);
+  color: var(--color-white);
+}
+
 /*boton */
 .button-Cont {
   display: flex;

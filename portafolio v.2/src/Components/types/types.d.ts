@@ -37,3 +37,9 @@ export interface Skills {
   name: string;
   icon: IconType;
 }
+
+export interface FormErrors {
+  name?: string | null;
+  email?: string | null;
+  message?: string | null;
+}
