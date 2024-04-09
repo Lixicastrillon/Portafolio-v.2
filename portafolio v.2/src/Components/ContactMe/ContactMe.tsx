@@ -110,6 +110,7 @@ const ContactMe = () => {
               Nombre
             </label>
             <input
+              maxLength={200}
               required
               id="nameId"
               className={
@@ -135,6 +136,7 @@ const ContactMe = () => {
               Dirección de correo electrónico
             </label>
             <input
+              maxLength={200}
               id="emailId"
               type="email"
               name="email"
@@ -163,6 +165,7 @@ const ContactMe = () => {
             Mensaje
           </label>
           <textarea
+            maxLength={500}
             id="messageId"
             cols={30}
             rows={4}
