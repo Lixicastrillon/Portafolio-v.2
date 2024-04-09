@@ -39,7 +39,6 @@
   @include Style-Contactme;
 }
 .la-c {
-  color: #c1d7e0;
   font-weight: 400;
   font-size: 22px;
   margin-bottom: 2%;
@@ -47,14 +46,23 @@
 
 .form-control {
   background: transparent;
-  border: 0;
-  border-bottom: 1px solid #c1d7e0;
-  color: var(--color-500);
-  background-color: transparent;
   border: 2px solid var(--color-500);
-  color: var(--color-white);
-  border-radius: 0%;
-  border: solid 1px var(--color-base);
+  color: aliceblue;
+}
+input[type="text"]::placeholder {
+  font-size: 18px;
+  color: var(--color-500);
+}
+input[type="email"]::placeholder {
+  font-size: 18px;
+  color: var(--color-500);
+}
+
+textarea {
+  &::placeholder {
+    font-size: 18px;
+    color: var(--color-500) !important;
+  }
 }
 
 input[type="text"]:focus {
@@ -67,14 +75,9 @@ input[type="email"]:focus {
   color: var(--color-white);
 }
 
-input[type="email"]:focus {
-  background-color: var(--color-base);
-  color: var(--color-white);
-}
-
-textarea[type="text"]:focus {
-  background-color: var(--color-base);
-  color: var(--color-white);
+textarea:focus {
+  background: var(--color-base) !important;
+  color: var(--color-white) !important;
 }
 
 /*boton */

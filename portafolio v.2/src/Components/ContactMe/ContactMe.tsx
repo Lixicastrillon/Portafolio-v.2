@@ -98,12 +98,13 @@ const ContactMe = () => {
         <p>Te responderé lo antes posible.</p>
       </div>
       <form
+        noValidate
         ref={refForm}
         action=""
-        onSubmit={sendEmail}
+        onSubmit={(e) => sendEmail(e)}
         className="containerContactme w-75 z-3  p-4"
       >
-        <div className="together-n-e d-flex  row w-100">
+        <div className="together-n-e d-flex  row  justify-content-between w-100">
           <div className="cont-name d-flex flex-column mb-5 w-50 ">
             <label id="nameId" className="la-c form-label">
               Nombre
@@ -116,7 +117,7 @@ const ContactMe = () => {
                   ? "form-control is-invalid"
                   : errors.name === null
                   ? "form-control is-valid"
-                  : "form control"
+                  : "form-control"
               }
               placeholder="Introduzca su nombre"
               type="text"
@@ -129,11 +130,14 @@ const ContactMe = () => {
               <div className="invalid-tooltip mt-1">Nombre requerido</div>
             ) : null}
           </div>
-          <div className="cont-email d-flex flex-column mb-5 w-50">
+          <div className="cont-email d-flex flex-column mb-5 w-50 pe-0">
             <label id="emailId" className="la-c form-label">
               Dirección de correo electrónico
             </label>
             <input
+              id="emailId"
+              type="email"
+              name="email"
               className={
                 errors.email
                   ? "form-control is-invalid"
@@ -141,13 +145,10 @@ const ContactMe = () => {
                   ? "form-control is-valid"
                   : "form-control"
               }
-              id="emailId"
-              type="email"
-              name="email"
               value={formData.email}
               onChange={(e) => handleChange(e)}
               onBlur={(e) => validations(e.target.value, e.target.name)}
-              placeholder="introduce tu dirección de correo electrónico"
+              placeholder="Introduzca su dirección de correo electrónico"
               required
             ></input>
             {errors.email ? (
@@ -162,6 +163,9 @@ const ContactMe = () => {
             Mensaje
           </label>
           <textarea
+            id="messageId"
+            cols={30}
+            rows={4}
             className={
               errors.message
                 ? "form-control is-invalid control-size"
@@ -169,9 +173,6 @@ const ContactMe = () => {
                 ? "form-control is-valid control-size"
                 : "form-control control-size"
             }
-            id="messageId"
-            // id="message"
-            maxLength={500}
             name="message"
             value={formData.message}
             onChange={(e) => handleChange(e)}
@@ -185,9 +186,9 @@ const ContactMe = () => {
         </div>
         <div className="button-Cont">
           <button
+            type="submit"
             className="button-me"
             onClick={notify}
-            type="submit"
             value="Send"
             disabled={
               errors.name ||
