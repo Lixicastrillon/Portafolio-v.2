@@ -46,6 +46,7 @@ const ContactMe = () => {
         [name]: !value ? defaultErrors[name] : null,
       });
     }
+    handleClickActive();
   };
 
   const notify = () => {
@@ -85,7 +86,25 @@ const ContactMe = () => {
       setErrors({});
     }
   };
+  const [buttonActive, setButtonActive] = useState<boolean>(false);
+  console.log(buttonActive);
+  console.log(formData);
+  console.log(errors);
 
+  const handleClickActive = () => {
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.message ||
+      errors.name ||
+      errors.email ||
+      errors.message
+    ) {
+      setButtonActive(false);
+    } else {
+      setButtonActive(true);
+    }
+  };
   return (
     <div className="contacMe container full-size d-flex flex-column align-items-center justify-content-start ">
       <div className="cont-H1 z-3">
@@ -190,19 +209,10 @@ const ContactMe = () => {
         <div className="button-Cont">
           <button
             type="submit"
-            className="button-me"
+            className={`button-me${buttonActive ? "-valided" : "-invalided"}`}
             onClick={notify}
             value="Send"
-            disabled={
-              errors.name ||
-              errors.email ||
-              errors.message ||
-              !formData.name ||
-              !formData.email ||
-              !formData.message
-                ? true
-                : false
-            }
+            disabled={!buttonActive}
           >
             <div className="icon-Button">
               <FaArrowRightLong />

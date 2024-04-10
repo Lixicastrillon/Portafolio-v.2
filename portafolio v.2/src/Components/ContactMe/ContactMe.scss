@@ -85,7 +85,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
 }
-.button-me {
+.button-me-valided {
   overflow: hidden;
   height: 6%;
   width: 13%;
@@ -102,7 +102,24 @@ textarea:focus {
   justify-content: center;
   align-items: center;
 }
-.button-me::after {
+.button-me-invalided {
+  overflow: hidden;
+  height: 6%;
+  width: 13%;
+  transition: width 0.4s;
+  top: 90%;
+  position: absolute;
+  z-index: 2;
+  border: 0.5px solid var(--color-500);
+  border-radius: 25px;
+  background: rgb(104, 102, 102);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.button-me-valided::after {
   z-index: -2;
   content: "";
   width: 150%;
@@ -113,11 +130,12 @@ textarea:focus {
   border-right: 60px solid transparent;
   transition: 0.5s ease-in-out;
 }
-.button-me:hover::after {
+
+.button-me-valided:hover::after {
   left: 0;
 }
 
-.button-me {
+.button-me-valided {
   .text-send {
     transition: 0.3s ease-in-out all;
     position: absolute;
@@ -137,7 +155,7 @@ textarea:focus {
   }
 }
 
-.button-me:hover {
+.button-me-valided:hover {
   height: 6%;
   width: 15% !important;
   .text-send {
@@ -148,5 +166,25 @@ textarea:focus {
     left: calc(100% - 50px);
     opacity: 1;
     color: #2b2a2a;
+  }
+}
+
+.button-me-invalided {
+  .text-send {
+    transition: 0.3s ease-in-out all;
+    position: absolute;
+    left: 28%;
+    font-size: 25px;
+    color: var(--color-400);
+    font-weight: var(--fontWeight-medium);
+  }
+  .icon-Button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    transition: 0.3s ease-in-out all;
+    opacity: 0;
+    font-size: 20px;
   }
 }
