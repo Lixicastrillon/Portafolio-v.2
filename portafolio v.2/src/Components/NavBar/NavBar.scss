@@ -87,7 +87,12 @@
   left: 18px;
   bottom: 6px;
 }
+// de 821px a mayor
 @media (min-width: 821px) {
+  .navbar-2 {
+    display: flex;
+    flex-direction: column;
+  }
   /*navbar*/
   .NavBarexpanded {
     background-color: var(--color-baseNavG);
@@ -119,27 +124,37 @@
       padding: 10px;
     }
   }
+  .NavBar-menu-ms {
+    display: none;
+  }
 }
-
+// de 821px a menor
 @media (max-width: 821px) {
   /*navbar*/
+
   .NavBarexpanded {
+    position: relative;
+    .navbar-2 {
+      position: absolute;
+      top: 20%;
+      left: 40%;
+      display: flex;
+      flex-direction: column;
+    }
     background-color: var(--color-baseNavG);
     position: fixed;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    @include transition(width);
-    height: 25%;
+    height: 30%;
     z-index: 999;
   }
   .NavBarcollapsed {
+    .navbar-2 {
+      display: flex;
+      flex-direction: row;
+    }
     background-color: var(--color-baseNavG);
     position: fixed;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    @include transition(width);
     height: 68px;
     z-index: 999;
   }
@@ -147,10 +162,20 @@
   .menuButton {
     display: flex;
     justify-content: right;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5% !important;
+    margin-left: 5% !important;
     .hamburgerButton {
       border: none;
       background: transparent;
       padding: 10px;
     }
+  }
+}
+.NavBar-menu-ms {
+  .menu-ms {
+    @include pG;
+    text-align: center;
   }
 }

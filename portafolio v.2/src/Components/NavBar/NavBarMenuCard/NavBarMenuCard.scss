@@ -67,3 +67,10 @@
     }
   }
 }
+
+// de 821px a menor
+@media (max-width: 821px) {
+  .NavBarMenuCard {
+    display: none;
+  }
+}

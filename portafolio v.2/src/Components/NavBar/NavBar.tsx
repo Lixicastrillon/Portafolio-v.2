@@ -21,6 +21,11 @@ const NavBar = ({ items, card }: BarMenuProps) => {
       className={classNames("NavBar", isExpanded ? "expanded" : "collapsed")}
     >
       <div className="menuButton">
+        <div className="NavBar-menu-ms">
+          <a href="#home">
+            <p className="menu-ms">Desarrollador web</p>
+          </a>
+        </div>
         <button className="hamburgerButton" onClick={handleClick}>
           <div
             onClick={handleClick}
@@ -38,7 +43,8 @@ const NavBar = ({ items, card }: BarMenuProps) => {
           </div>
         </button>
       </div>
-      <div className="d-flex flex-column">
+
+      <div className=" navbar-2">
         <NavBarMenuCard card={card} isExpanded={isExpanded} />
         {items.map((item) => (
           <NavBarMenuItem key={item.id} item={item} isExpanded={isExpanded} />
