@@ -1,6 +1,5 @@
 import "./AboutMe.scss";
 import { Skills } from "../types/types";
-import classNames from "../util/classes";
 
 interface AboutProps {
   skill: Skills[];

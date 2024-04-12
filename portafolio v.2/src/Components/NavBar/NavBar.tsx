@@ -16,6 +16,7 @@ const NavBar = ({ items, card }: BarMenuProps) => {
   const handleClick = () => {
     setIsExpanded(!isExpanded);
   };
+
   return (
     <div
       className={classNames("NavBar", isExpanded ? "expanded" : "collapsed")}
