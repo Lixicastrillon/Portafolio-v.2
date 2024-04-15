@@ -27,3 +27,28 @@
     margin-bottom: 13%;
   }
 }
+// de 821px a menor
+@media (max-width: 821px) {
+  .projects {
+    margin-top: 10%;
+    background: rgb(37, 37, 37);
+    h1 {
+      margin-top: 3%;
+      @include titleH1;
+      font-size: 40px;
+    }
+    p {
+      margin-bottom: 7% !important;
+      @include pG;
+      background: rgb(37, 37, 37);
+      font-size: 16px;
+    }
+    .work {
+      display: none;
+    }
+    .cardsProjects {
+      background: rgb(37, 37, 37);
+      margin-bottom: 13%;
+    }
+  }
+}

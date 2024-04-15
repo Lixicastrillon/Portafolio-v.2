@@ -23,7 +23,7 @@ const NavBar = ({ items, card }: BarMenuProps) => {
     >
       <div className="menuButton">
         <div className="NavBar-menu-ms">
-          <a href="#home">
+          <a href="#home" onClick={handleClick}>
             <p className="menu-ms">Desarrollador web</p>
           </a>
         </div>
@@ -48,7 +48,12 @@ const NavBar = ({ items, card }: BarMenuProps) => {
       <div className=" navbar-2">
         <NavBarMenuCard card={card} isExpanded={isExpanded} />
         {items.map((item) => (
-          <NavBarMenuItem key={item.id} item={item} isExpanded={isExpanded} />
+          <NavBarMenuItem
+            key={item.id}
+            item={item}
+            isExpanded={isExpanded}
+            handleClick={handleClick}
+          />
         ))}
       </div>
     </div>

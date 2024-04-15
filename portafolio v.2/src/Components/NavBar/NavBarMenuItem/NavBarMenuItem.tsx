@@ -1,21 +1,22 @@
 import "./NavBarMenuItem.scss";
 
-import classNames from "../../util/classes";
-
 import { BarMenuItems } from "../../types/types";
 
 interface NavBarMenuItemProps {
   item: BarMenuItems;
   isExpanded: Boolean;
+  handleClick: any;
 }
 
-const NavBarMenuItem = ({ item, isExpanded }: NavBarMenuItemProps) => {
+const NavBarMenuItem = ({
+  item,
+  isExpanded,
+  handleClick,
+}: NavBarMenuItemProps) => {
   return (
     <div className="NavBarMenuItem">
-      <a href={item.url}>
-        <div
-          className={classNames("itemContent", isExpanded ? "" : "collapsed")}
-        >
+      <a href={item.url} onClick={handleClick}>
+        <div className={`itemContent${isExpanded ? "" : "collapsed"}`}>
           <div className="icon">
             <item.icon className="iconT" />
           </div>
