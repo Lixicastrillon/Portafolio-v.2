@@ -11,7 +11,7 @@ const AboutMe = ({ skill }: AboutProps) => {
       <div className="contornoH1">
         <h1>Habilidades</h1>
       </div>
-      <div className="about1 w-100 d-flex justify-content-between">
+      <div className=" about1 w-100 d-flex ">
         <div className="w-45 mt-5">
           <p className="box-description">
             Aquí encontraras información sobre mis habilidades actuales en
@@ -22,7 +22,7 @@ const AboutMe = ({ skill }: AboutProps) => {
             habilidades.
           </p>
         </div>
-        <div className="w-45">
+        <div className="w-45 carrusel">
           <div className="d-flex  justify-content-center containerTecnology">
             {skill.map((icon) => (
               <div
