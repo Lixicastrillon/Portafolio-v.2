@@ -110,7 +110,7 @@ const ContactMe = () => {
       <div className="cont-H1 z-3">
         <h1>Envíame un mensaje</h1>
       </div>
-      <div className="mb-5 text-p p-2 z-3">
+      <div className="mb-3 text-p p-2 z-3">
         <p>
           ¿Tienes alguna pregunta, propuesta, o simplemente quieres saludar?
         </p>
@@ -121,7 +121,7 @@ const ContactMe = () => {
         ref={refForm}
         action=""
         onSubmit={(e) => sendEmail(e)}
-        className="containerContactme w-75 z-3  p-4"
+        className="containerContactme w-75 z-3  p-3"
       >
         <div className="together-n-e  w-100">
           <div className="cont-name d-flex flex-column mb-5">

@@ -5,7 +5,7 @@
 }
 
 @mixin titleH1G {
-  font-size: 60px;
+  font-size: 55px;
   line-height: 50px;
   letter-spacing: -3px;
   padding-bottom: 3%;
@@ -14,8 +14,7 @@
 }
 
 @mixin contornoH1 {
-  min-width: 25%;
-  max-width: 15%;
+  width: 22%;
   border: 0.5px solid var(--color-500);
   border-radius: 15px;
   // box-shadow: var(--color-500) 0px 0px 4px 1px inset;
@@ -24,14 +23,14 @@
   z-index: 3;
 }
 @mixin titleH1 {
-  font-size: 50px;
+  font-size: 45px;
   line-height: 50px;
   letter-spacing: -1px;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
+  margin-top: 1%;
   text-align: center;
   -webkit-text-fill-color: var(--color-500);
   font-weight: var(--fontWeight-semiBold);
-  margin-top: 3%;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
 }

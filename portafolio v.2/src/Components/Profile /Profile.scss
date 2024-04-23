@@ -10,20 +10,22 @@
     }
     p {
       @include pG;
+      font-size: 18.5px;
     }
-    h3 {
+    h4 {
       text-align: center;
+      margin: 0;
     }
   }
   .items-profession {
     grid-column-gap: 150px;
-    width: 80%;
+    width: 70%;
   }
 
   .profession {
     position: relative;
     overflow: hidden;
-    height: 400px;
+    height: 350px;
     border-radius: 15px;
     border: solid var(--color-500) 0.5px;
     justify-content: center;
@@ -36,7 +38,7 @@
 
   .profesion-description {
     background: #252525;
-    height: 400px;
+    height: 350px;
     border: solid var(--color-500) 0.5px;
     border-radius: 15px;
     z-index: 2;
@@ -80,7 +82,7 @@
       @include pG;
       font-size: 16px;
     }
-    h2 {
+    h4 {
       text-align: center;
       font-size: 25px;
     }
@@ -132,5 +134,22 @@
     display: block;
     margin-left: -20px;
     font-weight: normal;
+  }
+}
+
+@media (max-width: 575px) {
+  .profile {
+    .contornoH1 {
+      width: 20%;
+      h1 {
+        @include titleH1;
+        font-size: 25px;
+      }
+    }
+    .profesion-description {
+      h4 {
+        font-size: 22px;
+      }
+    }
   }
 }

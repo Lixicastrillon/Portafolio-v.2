@@ -24,7 +24,7 @@ const Projects = ({ cardp }: projectProps) => {
             óptimo de las aplicaciones.
           </p>
         </div>
-        <div className="cardsProjects row">
+        <div className="cardsProjects  row">
           {cardp.map((card) => (
             <ProjectCard key={card.id} card={card} />
           ))}

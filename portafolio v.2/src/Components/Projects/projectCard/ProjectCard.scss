@@ -459,15 +459,88 @@
   }
 }
 
-.buttonVisita:hover {
-  display: none;
-  .textV {
-    left: 25px;
-    color: #2b2a2a;
+@media (max-width: 575px) {
+  .projectCard {
+    padding: 0;
+    margin: 2%;
   }
-  .iconButton {
-    left: calc(100% - 50px);
-    opacity: 1;
-    color: #2b2a2a;
+  .image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .imagesProject {
+    object-fit: fill;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    opacity: 0.3;
+  }
+  .overlay {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  .imageoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    object-fit: contain;
+  }
+  .logoText {
+    z-index: 2;
+    position: absolute;
+    top: 50%; /* Ajusta la posición verticalmente */
+    left: 50%; /* Ajusta la posición horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el span */
+    font-size: 50px;
+    font-family: "Outfit", sans-serif;
+    font-weight: var(--fontWeight-medium);
+    letter-spacing: 3px;
+    color: white;
+  }
+  .description {
+    display: none;
+    text-align: justify;
+    position: absolute;
+    z-index: 2;
+    font-size: 18px;
+    top: 20%; /* Ajusta la posición verticalmente */
+    left: 30%; /* Ajusta la posición horizontalmente */
+    transform: translate(-20%, -20%); /* Centra el span */
+    line-height: 1.3;
+  }
+
+  .coloroverlay01 {
+    background: linear-gradient(130deg, #367eeb, #7031ac);
+  }
+
+  .coloroverlay02 {
+    background: linear-gradient(130deg, #e9c709, rgba(184, 106, 18, 0.867));
+  }
+  .coloroverlay03 {
+    background: linear-gradient(130deg, #278602, #00aeff);
+  }
+
+  .buttonVisita {
+    width: 25% !important;
+  }
+  .buttonVisita {
+    .textV {
+      font-size: 16px;
+      color: var(--color-400) !important;
+      font-weight: var(--fontWeight-medium);
+    }
+    .iconButton {
+      display: none;
+    }
   }
 }

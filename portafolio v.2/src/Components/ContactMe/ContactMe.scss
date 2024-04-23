@@ -6,11 +6,12 @@
     position: relative;
     h1 {
       @include titleH1;
+      font-size: 45px;
       -webkit-text-fill-color: var(--color-800) !important;
       border-bottom: 1px solid var(--color-800);
     }
     p {
-      font-size: 25px;
+      font-size: 20px;
       text-align: center;
       font-weight: 400;
       z-index: 4;
@@ -22,7 +23,6 @@
   }
   .cont-H1 {
     margin-top: 7%;
-    margin-bottom: 4%;
   }
   .text-p {
     border-radius: 15px;
@@ -31,19 +31,19 @@
 
   .cont-name {
     @include Style-Contactme;
-    width: 50%;
+    width: 49%;
   }
 
   .cont-email {
     @include Style-Contactme;
-    width: 50%;
+    width: 49%;
   }
   .cont-message {
     @include Style-Contactme;
   }
   .la-c {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 2%;
   }
 
@@ -93,7 +93,7 @@
     height: 6%;
     width: 13%;
     transition: width 0.4s;
-    top: 90%;
+    top: 96%;
     position: absolute;
     z-index: 2;
     border: 0.5px solid var(--color-500);
@@ -110,7 +110,7 @@
     height: 6%;
     width: 13%;
     transition: width 0.4s;
-    top: 90%;
+    top: 96%;
     position: absolute;
     z-index: 2;
     border: 0.5px solid var(--color-500);

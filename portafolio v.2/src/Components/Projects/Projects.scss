@@ -1,34 +1,37 @@
 @import "../scss/abstracts/mixins.scss";
 @import "../scss/abstracts/variables.scss";
 
-.projects {
-  background: rgb(37, 37, 37);
-  h1 {
-    @include titleH1;
-  }
-  p {
-    margin-bottom: 5%;
-    @include pG;
+@media (min-width: 821px) {
+  .projects {
     background: rgb(37, 37, 37);
-  }
-  .work {
-    font-size: 150px;
-    font-weight: var(--fontWeight-bold);
-    position: absolute;
-    color: var(--color-100);
-    letter-spacing: -10px;
-    right: -5%;
-    bottom: -55%;
-    opacity: 0.3;
-    transform: rotate(-90deg);
-  }
-  .cardsProjects {
-    background: rgb(37, 37, 37);
-    margin-bottom: 13%;
+    h1 {
+      @include titleH1;
+    }
+    p {
+      margin-bottom: 5%;
+      @include pG;
+      background: rgb(37, 37, 37);
+    }
+    .work {
+      font-size: 150px;
+      font-weight: var(--fontWeight-bold);
+      position: absolute;
+      color: var(--color-100);
+      letter-spacing: -10px;
+      right: -5%;
+      bottom: -55%;
+      opacity: 0.3;
+      transform: rotate(-90deg);
+    }
+    .cardsProjects {
+      background: rgb(37, 37, 37);
+      margin-bottom: 13%;
+    }
   }
 }
+
 // de 821px a menor
-@media (max-width: 821px) {
+@media (max-width: 820px) {
   .projects {
     background: rgb(37, 37, 37);
     h1 {
@@ -43,8 +46,31 @@
       font-size: 16px;
     }
 
-    .contornoH1 {
-      margin-top: 12%;
+    .work {
+      display: none;
+    }
+    .cardsProjects {
+      background: rgb(37, 37, 37);
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .projects {
+    background: rgb(37, 37, 37);
+    padding: 6%;
+    h1 {
+      margin-top: 3%;
+      @include titleH1;
+      font-size: 25px;
+    }
+    p {
+      margin-bottom: 3%;
+      @include pG;
+      background: rgb(37, 37, 37);
+      font-size: 18px;
     }
 
     .work {
@@ -52,7 +78,6 @@
     }
     .cardsProjects {
       background: rgb(37, 37, 37);
-      margin-bottom: 13%;
       display: flex;
       justify-content: center;
     }
