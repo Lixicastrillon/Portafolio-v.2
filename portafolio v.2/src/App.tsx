@@ -230,7 +230,7 @@ function App() {
       id: "01",
       title: "Full Stack Web Developer",
       duration:
-        "Este programa abarcó un total de 800 horas de aprendizaje práctico y teórico. Mi fecha de graduación en agosto de 2023 marcó el comienzo de mi trayectoria como desarrolladora.",
+        "Este programa abarcó  800 horas de aprendizaje práctico y teórico. Mi fecha de graduación en agosto de 2023 marcó el comienzo de mi trayectoria como desarrolladora.",
       icon: "👩🏼‍💻",
       image: software,
     },

@@ -170,7 +170,7 @@
 
       h1 {
         @include titleH1G;
-        font-size: 50px !important;
+        font-size: 50px;
       }
       p {
         color: #a2a2a3;
@@ -179,6 +179,30 @@
         margin-top: 2%;
         font-size: 15px;
       }
+    }
+  }
+}
+
+@media (max-width: 444px) {
+  .text-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .titleBue {
+      color: var(--color-500);
+    }
+
+    h1 {
+      @include titleH1G;
+      font-size: 35px !important;
+    }
+    p {
+      color: #a2a2a3;
+      letter-spacing: 3px;
+      margin-bottom: 0;
+      margin-top: 2%;
+      font-size: 15px;
     }
   }
 }

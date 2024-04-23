@@ -7,12 +7,12 @@
     @include titleH1;
   }
   p {
-    margin-bottom: 7% !important;
+    margin-bottom: 5%;
     @include pG;
     background: rgb(37, 37, 37);
   }
   .work {
-    font-size: 180px;
+    font-size: 150px;
     font-weight: var(--fontWeight-bold);
     position: absolute;
     color: var(--color-100);
@@ -37,7 +37,7 @@
       font-size: 35px;
     }
     p {
-      margin-bottom: 7% !important;
+      margin-bottom: 3%;
       @include pG;
       background: rgb(37, 37, 37);
       font-size: 16px;

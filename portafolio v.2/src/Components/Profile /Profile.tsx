@@ -17,7 +17,7 @@ const Profile = ({ education }: ProfileCardProps) => {
             <img src={card.image} className="image-software w-100 p-2" />
             <div className="profesion-description w-100 p-4 d-flex flex-column justify-content-center align-items-center ">
               <span className="iconP mt-3">{card.icon}</span>
-              <h2 className="titleH2">{card.title}</h2>
+              <h3 className="titleH2">{card.title}</h3>
               <div className="elementp p-4">
                 <p>{card.duration}</p>
               </div>

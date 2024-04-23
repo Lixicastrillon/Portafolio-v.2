@@ -11,8 +11,8 @@ const AboutMe = ({ skill }: AboutProps) => {
       <div className="contornoH1">
         <h1>Habilidades</h1>
       </div>
-      <div className=" about1 w-100 d-flex ">
-        <div className="w-45 mt-5">
+      <div className=" about1 w-100">
+        <div className="w-45">
           <p className="box-description">
             Aquí encontraras información sobre mis habilidades actuales en
             términos de programación, estoy comprometida con el aprendizaje
@@ -43,7 +43,6 @@ const AboutMe = ({ skill }: AboutProps) => {
           </div>
         </div>
       </div>
-      <div className="fondo h-100"></div>
     </div>
   );
 };

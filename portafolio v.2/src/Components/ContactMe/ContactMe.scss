@@ -1,190 +1,356 @@
 @import "../scss/abstracts/mixins.scss";
 @import "../scss/abstracts/variables.scss";
 
-.contacMe {
-  position: relative;
-  h1 {
-    @include titleH1;
-    -webkit-text-fill-color: var(--color-800) !important;
-    border-bottom: 1px solid var(--color-800);
+@media (min-width: 821px) {
+  .contacMe {
+    position: relative;
+    h1 {
+      @include titleH1;
+      -webkit-text-fill-color: var(--color-800) !important;
+      border-bottom: 1px solid var(--color-800);
+    }
+    p {
+      font-size: 25px;
+      text-align: center;
+      font-weight: 400;
+      z-index: 4;
+    }
   }
-  p {
-    font-size: 25px;
-    text-align: center;
+  .containerContactme {
+    background: var(--color-base);
+    border-radius: 15px;
+  }
+  .cont-H1 {
+    margin-top: 7%;
+    margin-bottom: 4%;
+  }
+  .text-p {
+    border-radius: 15px;
+    background: var(--color-base);
+  }
+
+  .cont-name {
+    @include Style-Contactme;
+    width: 50%;
+  }
+
+  .cont-email {
+    @include Style-Contactme;
+    width: 50%;
+  }
+  .cont-message {
+    @include Style-Contactme;
+  }
+  .la-c {
     font-weight: 400;
-    z-index: 4;
+    font-size: 22px;
+    margin-bottom: 2%;
   }
-}
-.containerContactme {
-  background: var(--color-base);
-  border-radius: 15px;
-}
-.cont-H1 {
-  margin-top: 7%;
-  margin-bottom: 4%;
-}
-.text-p {
-  border-radius: 15px;
-  background: var(--color-base);
-}
 
-.cont-name {
-  @include Style-Contactme;
-}
-
-.cont-email {
-  @include Style-Contactme;
-}
-.cont-message {
-  @include Style-Contactme;
-}
-.la-c {
-  font-weight: 400;
-  font-size: 22px;
-  margin-bottom: 2%;
-}
-
-.form-control {
-  background: transparent;
-  border: 2px solid var(--color-500);
-  color: aliceblue;
-}
-input[type="text"]::placeholder {
-  font-size: 18px;
-  color: var(--color-500);
-}
-input[type="email"]::placeholder {
-  font-size: 18px;
-  color: var(--color-500);
-}
-
-textarea {
-  &::placeholder {
+  .form-control {
+    background: transparent;
+    border: 2px solid var(--color-500);
+    color: aliceblue;
+  }
+  input[type="text"]::placeholder {
     font-size: 18px;
-    color: var(--color-500) !important;
+    color: var(--color-500);
   }
-}
-
-input[type="text"]:focus {
-  background-color: var(--color-base);
-  color: var(--color-white);
-}
-
-input[type="email"]:focus {
-  background-color: var(--color-base);
-  color: var(--color-white);
-}
-
-textarea:focus {
-  background: var(--color-base) !important;
-  color: var(--color-white) !important;
-}
-
-/*boton */
-.button-Cont {
-  display: flex;
-  justify-content: center;
-}
-.button-me-valided {
-  overflow: hidden;
-  height: 6%;
-  width: 13%;
-  transition: width 0.4s;
-  top: 90%;
-  position: absolute;
-  z-index: 2;
-  border: 0.5px solid var(--color-500);
-  border-radius: 25px;
-  background: transparent;
-  color: var(--color-white);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.button-me-invalided {
-  overflow: hidden;
-  height: 6%;
-  width: 13%;
-  transition: width 0.4s;
-  top: 90%;
-  position: absolute;
-  z-index: 2;
-  border: 0.5px solid var(--color-500);
-  border-radius: 25px;
-  background: rgb(104, 102, 102);
-  color: var(--color-white);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.button-me-valided::after {
-  z-index: -2;
-  content: "";
-  width: 150%;
-  position: absolute;
-  top: 0;
-  left: calc(-150% - 50px);
-  border-bottom: 60px solid var(--color-500);
-  border-right: 60px solid transparent;
-  transition: 0.5s ease-in-out;
-}
-
-.button-me-valided:hover::after {
-  left: 0;
-}
-
-.button-me-valided {
-  .text-send {
-    transition: 0.3s ease-in-out all;
-    position: absolute;
-    left: 28%;
-    font-size: 25px;
-    color: var(--color-400);
-    font-weight: var(--fontWeight-medium);
+  input[type="email"]::placeholder {
+    font-size: 18px;
+    color: var(--color-500);
   }
-  .icon-Button {
+
+  textarea {
+    &::placeholder {
+      font-size: 18px;
+      color: var(--color-500) !important;
+    }
+  }
+
+  input[type="text"]:focus {
+    background-color: var(--color-base);
+    color: var(--color-white);
+  }
+
+  input[type="email"]:focus {
+    background-color: var(--color-base);
+    color: var(--color-white);
+  }
+
+  textarea:focus {
+    background: var(--color-base) !important;
+    color: var(--color-white) !important;
+  }
+
+  /*boton */
+  .button-Cont {
     display: flex;
-    align-items: center;
+    justify-content: center;
+  }
+  .button-me-valided {
+    overflow: hidden;
+    height: 6%;
+    width: 13%;
+    transition: width 0.4s;
+    top: 90%;
     position: absolute;
-    left: 0px;
-    transition: 0.3s ease-in-out all;
-    opacity: 0;
-    font-size: 20px;
-  }
-}
-
-.button-me-valided:hover {
-  height: 6%;
-  width: 15% !important;
-  .text-send {
-    left: 25px;
-    color: #2b2a2a;
-  }
-  .icon-Button {
-    left: calc(100% - 50px);
-    opacity: 1;
-    color: #2b2a2a;
-  }
-}
-
-.button-me-invalided {
-  .text-send {
-    transition: 0.3s ease-in-out all;
-    position: absolute;
-    left: 28%;
-    font-size: 25px;
-    color: var(--color-400);
-    font-weight: var(--fontWeight-medium);
-  }
-  .icon-Button {
+    z-index: 2;
+    border: 0.5px solid var(--color-500);
+    border-radius: 25px;
+    background: transparent;
+    color: var(--color-white);
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+  }
+  .button-me-invalided {
+    overflow: hidden;
+    height: 6%;
+    width: 13%;
+    transition: width 0.4s;
+    top: 90%;
     position: absolute;
-    left: 0px;
-    transition: 0.3s ease-in-out all;
-    opacity: 0;
-    font-size: 20px;
+    z-index: 2;
+    border: 0.5px solid var(--color-500);
+    border-radius: 25px;
+    background: rgb(104, 102, 102);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-me-valided::after {
+    z-index: -2;
+    content: "";
+    width: 150%;
+    position: absolute;
+    top: 0;
+    left: calc(-150% - 50px);
+    border-bottom: 60px solid var(--color-500);
+    border-right: 60px solid transparent;
+    transition: 0.5s ease-in-out;
+  }
+
+  .button-me-valided:hover::after {
+    left: 0;
+  }
+
+  .button-me-valided {
+    .text-send {
+      transition: 0.3s ease-in-out all;
+      position: absolute;
+      left: 28%;
+      font-size: 25px;
+      color: var(--color-400);
+      font-weight: var(--fontWeight-medium);
+    }
+    .icon-Button {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 0px;
+      transition: 0.3s ease-in-out all;
+      opacity: 0;
+      font-size: 20px;
+    }
+  }
+
+  .button-me-valided:hover {
+    height: 6%;
+    width: 15% !important;
+    .text-send {
+      left: 25px;
+      color: #2b2a2a;
+    }
+    .icon-Button {
+      left: calc(100% - 50px);
+      opacity: 1;
+      color: #2b2a2a;
+    }
+  }
+
+  .button-me-invalided {
+    .text-send {
+      transition: 0.3s ease-in-out all;
+      position: absolute;
+      left: 28%;
+      font-size: 25px;
+      color: var(--color-400);
+      font-weight: var(--fontWeight-medium);
+    }
+    .icon-Button {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 0px;
+      transition: 0.3s ease-in-out all;
+      opacity: 0;
+      font-size: 20px;
+    }
+  }
+  .together-n-e {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 820px) {
+  .contacMe {
+    position: relative;
+    h1 {
+      @include titleH1;
+      font-size: 35px;
+      -webkit-text-fill-color: var(--color-800) !important;
+      border-bottom: 1px solid var(--color-800);
+    }
+    p {
+      font-size: 16px;
+      text-align: center;
+      font-weight: 400;
+      z-index: 4;
+    }
+  }
+  .containerContactme {
+    background: var(--color-base);
+    border-radius: 15px;
+  }
+  .cont-H1 {
+    margin-top: 7%;
+    margin-bottom: 4%;
+  }
+  .text-p {
+    border-radius: 15px;
+    background: var(--color-base);
+  }
+
+  .cont-name {
+    @include Style-Contactme;
+    width: 100%;
+  }
+
+  .cont-email {
+    @include Style-Contactme;
+    width: 100%;
+  }
+  .cont-message {
+    @include Style-Contactme;
+  }
+  .la-c {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 2%;
+  }
+
+  .form-control {
+    background: transparent;
+    border: 2px solid var(--color-500);
+    color: aliceblue;
+  }
+  input[type="text"]::placeholder {
+    font-size: 18px;
+    color: var(--color-500);
+  }
+  input[type="email"]::placeholder {
+    font-size: 18px;
+    color: var(--color-500);
+  }
+
+  textarea {
+    &::placeholder {
+      font-size: 18px;
+      color: var(--color-500) !important;
+    }
+  }
+
+  input[type="text"]:focus {
+    background-color: var(--color-base);
+    color: var(--color-white);
+  }
+
+  input[type="email"]:focus {
+    background-color: var(--color-base);
+    color: var(--color-white);
+  }
+
+  textarea:focus {
+    background: var(--color-base) !important;
+    color: var(--color-white) !important;
+  }
+
+  /*boton */
+  .button-Cont {
+    display: flex;
+    justify-content: center;
+  }
+  .button-me-valided {
+    overflow: hidden;
+    height: 5%;
+    width: 12%;
+    transition: width 0.4s;
+    top: 80%;
+    position: absolute;
+    z-index: 2;
+    border: 0.5px solid var(--color-500);
+    border-radius: 25px;
+    background: transparent;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-me-invalided {
+    overflow: hidden;
+    height: 5%;
+    width: 12%;
+    transition: width 0.4s;
+    top: 80%;
+    position: absolute;
+    z-index: 2;
+    border: 0.5px solid var(--color-500);
+    border-radius: 25px;
+    background: rgb(104, 102, 102);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-me-valided {
+    .text-send {
+      transition: 0.3s ease-in-out all;
+      position: absolute;
+      left: 28%;
+      font-size: 16px;
+      color: var(--color-400);
+      font-weight: var(--fontWeight-medium);
+    }
+    .icon-Button {
+      display: none;
+    }
+  }
+
+  .button-me-invalided {
+    .text-send {
+      transition: 0.3s ease-in-out all;
+      position: absolute;
+      left: 28%;
+      font-size: 16px;
+      color: var(--color-400);
+      font-weight: var(--fontWeight-medium);
+    }
+    .icon-Button {
+      display: none;
+    }
+  }
+
+  .together-n-e {
+    display: flex;
+    flex-direction: column;
   }
 }

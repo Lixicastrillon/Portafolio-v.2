@@ -11,7 +11,7 @@
     p {
       @include pG;
     }
-    h2 {
+    h3 {
       text-align: center;
     }
   }
@@ -47,11 +47,11 @@
     transform: translateY(-70%);
   }
   .iconP {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .elementp::before {
-    content: "< h3 >";
+    content: "< p >";
     margin-bottom: 13.328px;
     opacity: 0.3;
     color: white;
@@ -60,7 +60,7 @@
     font-weight: normal;
   }
   .elementp::after {
-    content: "< / h3 >";
+    content: "< /p >";
     margin-bottom: 13.328px;
     opacity: 0.3;
     color: white;

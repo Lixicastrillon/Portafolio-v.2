@@ -123,8 +123,8 @@ const ContactMe = () => {
         onSubmit={(e) => sendEmail(e)}
         className="containerContactme w-75 z-3  p-4"
       >
-        <div className="together-n-e d-flex  row  justify-content-between w-100">
-          <div className="cont-name d-flex flex-column mb-5 w-50 ">
+        <div className="together-n-e  w-100">
+          <div className="cont-name d-flex flex-column mb-5">
             <label id="nameId" className="la-c form-label">
               Nombre
             </label>
@@ -150,7 +150,7 @@ const ContactMe = () => {
               <div className="invalid-tooltip mt-1">Nombre requerido</div>
             ) : null}
           </div>
-          <div className="cont-email d-flex flex-column mb-5 w-50 pe-0">
+          <div className="cont-email d-flex flex-column mb-5 pe-0">
             <label id="emailId" className="la-c form-label">
               Dirección de correo electrónico
             </label>

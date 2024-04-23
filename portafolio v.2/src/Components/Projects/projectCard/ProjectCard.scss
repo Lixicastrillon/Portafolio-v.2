@@ -50,7 +50,7 @@
     text-align: justify;
     position: absolute;
     z-index: 2;
-    font-size: 20px;
+    font-size: 18px;
     top: 20%; /* Ajusta la posición verticalmente */
     left: 30%; /* Ajusta la posición horizontalmente */
     transform: translate(-20%, -20%); /* Centra el span */
@@ -290,7 +290,7 @@
     top: 50%; /* Ajusta la posición verticalmente */
     left: 50%; /* Ajusta la posición horizontalmente */
     transform: translate(-50%, -50%); /* Centra el span */
-    font-size: 55px;
+    font-size: 33px;
     font-family: "Outfit", sans-serif;
     font-weight: var(--fontWeight-medium);
     letter-spacing: 3px;
@@ -301,7 +301,7 @@
     text-align: justify;
     position: absolute;
     z-index: 2;
-    font-size: 20px;
+    font-size: 15px;
     top: 20%; /* Ajusta la posición verticalmente */
     left: 30%; /* Ajusta la posición horizontalmente */
     transform: translate(-20%, -20%); /* Centra el span */
@@ -457,13 +457,6 @@
       display: none;
     }
   }
-}
-
-.logoText {
-  font-size: 33px;
-}
-.description {
-  font-size: 15px;
 }
 
 .buttonVisita:hover {

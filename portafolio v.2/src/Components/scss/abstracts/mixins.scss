@@ -5,7 +5,7 @@
 }
 
 @mixin titleH1G {
-  font-size: 70px;
+  font-size: 60px;
   line-height: 50px;
   letter-spacing: -3px;
   padding-bottom: 3%;
@@ -19,12 +19,12 @@
   border: 0.5px solid var(--color-500);
   border-radius: 15px;
   // box-shadow: var(--color-500) 0px 0px 4px 1px inset;
-  margin-top: 7%;
-  margin-bottom: 7%;
+  margin-top: 2%;
+  margin-bottom: 5%;
   z-index: 3;
 }
 @mixin titleH1 {
-  font-size: 55px;
+  font-size: 50px;
   line-height: 50px;
   letter-spacing: -1px;
   padding-bottom: 3%;
