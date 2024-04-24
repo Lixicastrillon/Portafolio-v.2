@@ -142,6 +142,7 @@
   .contornoH1 {
     @include contornoH1;
     margin-top: 12%;
+    width: 35%;
   }
 
   .fondo {
@@ -256,5 +257,18 @@
   }
   .style13 {
     animation-delay: -2s;
+  }
+}
+
+@media (max-width: 575px) {
+  .about {
+    h1 {
+      margin-top: 3%;
+      @include titleH1;
+      font-size: 25px;
+    }
+    .contornoH1 {
+      width: 38%;
+    }
   }
 }

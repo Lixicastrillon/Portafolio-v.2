@@ -90,6 +90,7 @@
 
   .contornoH1 {
     margin-top: 12%;
+    width: 32%;
   }
   .items-profession {
     grid-column-gap: 80px;
@@ -140,16 +141,26 @@
 @media (max-width: 575px) {
   .profile {
     .contornoH1 {
-      width: 20%;
       h1 {
         @include titleH1;
         font-size: 25px;
       }
     }
-    .profesion-description {
-      h4 {
-        font-size: 22px;
-      }
+  }
+  .items-profession {
+    grid-column-gap: 40px;
+    width: 80%;
+  }
+  .profesion-description {
+    padding: 3% !important;
+    h4 {
+      font-size: 22px;
     }
+  }
+  .elementp::before {
+    content: "";
+  }
+  .elementp::after {
+    content: "";
   }
 }

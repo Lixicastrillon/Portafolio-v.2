@@ -177,7 +177,7 @@
       transition: 0.3s ease-in-out all;
       position: absolute;
       left: 28%;
-      font-size: 25px;
+      font-size: 20px;
       color: var(--color-400);
       font-weight: var(--fontWeight-medium);
     }
@@ -291,7 +291,7 @@
     height: 5%;
     width: 12%;
     transition: width 0.4s;
-    top: 80%;
+    top: 70%;
     position: absolute;
     z-index: 2;
     border: 0.5px solid var(--color-500);
@@ -308,7 +308,7 @@
     height: 5%;
     width: 12%;
     transition: width 0.4s;
-    top: 80%;
+    top: 70%;
     position: absolute;
     z-index: 2;
     border: 0.5px solid var(--color-500);
@@ -352,5 +352,35 @@
   .together-n-e {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .cont-H1 {
+    h1 {
+      font-size: 25px;
+    }
+  }
+  .button-me-valided {
+    width: 18%;
+    top: 80%;
+    .text-send {
+      left: 20%;
+    }
+  }
+  .button-me-invalided {
+    width: 18%;
+    top: 80%;
+    .text-send {
+      left: 20%;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .button-me-valided {
+    top: 97%;
+  }
+  .button-me-invalided {
+    top: 97%;
   }
 }
