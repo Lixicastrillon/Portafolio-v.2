@@ -16,6 +16,9 @@ const NavBar = ({ items, card }: BarMenuProps) => {
   const handleClick = () => {
     setIsExpanded(!isExpanded);
   };
+  const tooltips = () => {
+    setIsExpanded(false);
+  };
 
   return (
     <div
@@ -52,7 +55,7 @@ const NavBar = ({ items, card }: BarMenuProps) => {
             key={item.id}
             item={item}
             isExpanded={isExpanded}
-            handleClick={handleClick}
+            handleClick={tooltips}
           />
         ))}
       </div>

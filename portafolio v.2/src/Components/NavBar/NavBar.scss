@@ -191,5 +191,12 @@
     .navbar-2 {
       top: 15%;
     }
+    height: 27%;
+  }
+}
+
+@media (max-width: 375px) {
+  .NavBarexpanded {
+    height: 36%;
   }
 }
