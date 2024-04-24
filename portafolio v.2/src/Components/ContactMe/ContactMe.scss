@@ -2,6 +2,9 @@
 @import "../scss/abstracts/variables.scss";
 
 @media (min-width: 821px) {
+  .cont-H1 {
+    margin-top: 2%;
+  }
   .contacMe {
     position: relative;
     h1 {
@@ -91,7 +94,7 @@
     height: 6%;
     width: 13%;
     transition: width 0.4s;
-    top: 90%;
+    top: 88%;
     position: absolute;
     z-index: 2;
     border: 0.5px solid var(--color-500);
@@ -108,7 +111,7 @@
     height: 6%;
     width: 13%;
     transition: width 0.4s;
-    top: 90%;
+    top: 88%;
     position: absolute;
     z-index: 2;
     border: 0.5px solid var(--color-500);

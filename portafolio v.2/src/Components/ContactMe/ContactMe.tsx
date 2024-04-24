@@ -15,19 +15,12 @@ const defaultErrors: any = {
 };
 
 const ContactMe = () => {
+  const [buttonActive, setButtonActive] = useState<boolean>(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
-
-  const handleChange = (e: any) => {
-    e.preventDefault();
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   const [errors, setErrors] = useState<FormErrors>({});
 
@@ -47,6 +40,14 @@ const ContactMe = () => {
       });
     }
     handleClickActive();
+  };
+  const handleChange = (e: any) => {
+    e.preventDefault();
+    validations(e.target.value, e.target.name);
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const notify = () => {
@@ -83,13 +84,10 @@ const ContactMe = () => {
         email: "",
         message: "",
       });
+      setButtonActive(false);
       setErrors({});
     }
   };
-  const [buttonActive, setButtonActive] = useState<boolean>(false);
-  console.log(buttonActive);
-  console.log(formData);
-  console.log(errors);
 
   const handleClickActive = () => {
     if (
@@ -129,6 +127,7 @@ const ContactMe = () => {
               Nombre
             </label>
             <input
+              autoComplete="off"
               maxLength={200}
               required
               id="nameId"
@@ -144,7 +143,6 @@ const ContactMe = () => {
               name="name"
               value={formData.name}
               onChange={(e) => handleChange(e)}
-              onBlur={(e) => validations(e.target.value, e.target.name)}
             ></input>
             {errors.name ? (
               <div className="invalid-tooltip mt-1">Nombre requerido</div>
@@ -155,6 +153,7 @@ const ContactMe = () => {
               Dirección de correo electrónico
             </label>
             <input
+              autoComplete="off"
               maxLength={200}
               id="emailId"
               type="email"
@@ -168,7 +167,6 @@ const ContactMe = () => {
               }
               value={formData.email}
               onChange={(e) => handleChange(e)}
-              onBlur={(e) => validations(e.target.value, e.target.name)}
               placeholder="Introduzca su dirección de correo electrónico"
               required
             ></input>
@@ -198,7 +196,6 @@ const ContactMe = () => {
             name="message"
             value={formData.message}
             onChange={(e) => handleChange(e)}
-            onBlur={(e) => validations(e.target.value, e.target.name)}
             placeholder="Hola, creo que necesitamos una página web para nuestros productos en la Compañía X. ¿Qué tan pronto puedes entrar para discutir esto?"
             required
           ></textarea>
