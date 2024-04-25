@@ -42,6 +42,7 @@ import software from "./Components/Profile /software.jpg";
 import industrial from "./Components/Profile /ingindustrial.jpg";
 import Footer from "./Components/Footer/Footer";
 import particlesConfig from "../js/particlesjs-config.json";
+import dogs from "../src/Components/Projects/dog.jpg";
 //@ts-ignore
 
 particlesJS(particlesConfig);
@@ -111,8 +112,8 @@ function App() {
     },
     {
       id: "03",
-      image: "",
-      url: "https://craftbeershop.vercel.app/",
+      image: dogs,
+      url: "https://github.com/Lixicastrillon/PROYECTO-INDIVIDUAL",
       logo: "Dogs",
       description:
         "Información de razas de perros, proyecto individual del bootcamp full stack web developer.",
