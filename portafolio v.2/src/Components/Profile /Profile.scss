@@ -141,6 +141,8 @@
 @media (max-width: 575px) {
   .profile {
     .contornoH1 {
+      margin-top: 18%;
+      width: 36%;
       h1 {
         @include titleH1;
         font-size: 25px;
