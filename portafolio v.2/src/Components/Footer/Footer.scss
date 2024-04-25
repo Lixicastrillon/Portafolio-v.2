@@ -1,0 +1,14 @@
+@import "../scss/abstracts/variables.scss";
+
+.baseColor {
+  padding-bottom: 2%;
+  background: rgb(37, 37, 37);
+}
+
+.hr {
+  width: 100%;
+  border: 1px solid var(--color-400);
+}
+.card {
+  padding: 3%;
+}

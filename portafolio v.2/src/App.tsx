@@ -40,6 +40,7 @@ import ContactMe from "./Components/ContactMe/ContactMe";
 import Profile from "./Components/Profile /Profile";
 import software from "./Components/Profile /software.jpg";
 import industrial from "./Components/Profile /ingindustrial.jpg";
+import Footer from "./Components/Footer/Footer";
 
 particlesJS({
   particles: {
@@ -331,6 +332,9 @@ function App() {
         </div>
         <div id="contactme">
           <ContactMe />
+        </div>
+        <div id="Footer">
+          <Footer />
         </div>
       </div>
     </div>
