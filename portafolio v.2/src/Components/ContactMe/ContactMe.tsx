@@ -104,7 +104,7 @@ const ContactMe = () => {
     }
   };
   return (
-    <div className="contacMe container full-size d-flex flex-column align-items-center justify-content-start ">
+    <div className="contacMe container full-size d-flex flex-column align-items-center ">
       <div className="cont-H1 z-3">
         <h1>Envíame un mensaje</h1>
       </div>
