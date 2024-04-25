@@ -3,7 +3,7 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="container ">
-      <div className="hr mb-5 z-3" />
+      <div className="hr mt-4 mb-2 z-3" />
       <div className="d-flex flex-md-row flex-column mt-3 justify-content-between z-3">
         <div className="card text-center mb-3 border-0 baseColor z-3">
           <h5 className="card-title fw-semibold fs-2 mb-3 text-white">

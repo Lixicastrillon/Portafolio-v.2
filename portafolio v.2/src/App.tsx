@@ -41,6 +41,7 @@ import Profile from "./Components/Profile /Profile";
 import software from "./Components/Profile /software.jpg";
 import industrial from "./Components/Profile /ingindustrial.jpg";
 import Footer from "./Components/Footer/Footer";
+//@ts-ignore
 
 particlesJS({
   particles: {
