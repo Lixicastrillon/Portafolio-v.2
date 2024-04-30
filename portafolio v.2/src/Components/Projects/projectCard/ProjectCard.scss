@@ -186,7 +186,6 @@
     border: 0.5px solid var(--color-500);
     border-radius: 25px;
     background: transparent;
-    color: var(--color-white);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -408,26 +407,11 @@
 
   .buttonVisita {
     overflow: hidden;
-    height: 15%;
     width: 45% !important;
     top: 73%;
   }
   .buttonVisita {
     display: none;
-  }
-  .buttonVisita::after {
-    z-index: -2;
-    content: "";
-    width: 155%;
-    position: absolute;
-    top: 0;
-    left: calc(-150% - 50px);
-    border-bottom: 50px solid var(--color-500);
-    border-right: 50px solid transparent;
-    transition: 0.5s ease-in-out;
-  }
-  .buttonVisita:hover::after {
-    left: 0;
   }
 
   .buttonVisita {
@@ -442,12 +426,8 @@
   }
 
   .buttonVisita:hover {
-    background: rgb(37, 37, 37) !important;
-    height: 15%;
     width: 45% !important;
     .textV {
-      left: 14px;
-      color: var(--color-400) !important;
       left: 22%;
     }
     .iconButton {
@@ -461,80 +441,14 @@
     padding: 0;
     margin: 2%;
   }
-  .image-container {
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 15px;
-  }
-  .imagesProject {
-    object-fit: fill;
-    width: 100%;
-    height: 200px;
-    border-radius: 15px;
-    opacity: 0.3;
-  }
-  .overlay {
-    border-radius: 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-  }
-  .imageoverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    object-fit: contain;
-  }
-  .logoText {
-    z-index: 2;
-    position: absolute;
-    top: 50%; /* Ajusta la posición verticalmente */
-    left: 50%; /* Ajusta la posición horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el span */
-    font-size: 50px;
-    font-family: "Outfit", sans-serif;
-    font-weight: var(--fontWeight-medium);
-    letter-spacing: 3px;
-    color: white;
-  }
-  .description {
-    display: none;
-    text-align: justify;
-    position: absolute;
-    z-index: 2;
-    font-size: 18px;
-    top: 20%; /* Ajusta la posición verticalmente */
-    left: 30%; /* Ajusta la posición horizontalmente */
-    transform: translate(-20%, -20%); /* Centra el span */
-    line-height: 1.3;
-  }
-
-  .coloroverlay01 {
-    background: linear-gradient(130deg, #367eeb, #7031ac);
-  }
-
-  .coloroverlay02 {
-    background: linear-gradient(130deg, #e9c709, rgba(184, 106, 18, 0.867));
-  }
-  .coloroverlay03 {
-    background: linear-gradient(130deg, #278602, #00aeff);
-  }
 
   .buttonVisita {
     width: 25% !important;
   }
-  .buttonVisita {
+  .buttonVisita:hover {
+    width: 25% !important;
     .textV {
       font-size: 16px;
-      color: var(--color-400) !important;
-      font-weight: var(--fontWeight-medium);
     }
     .iconButton {
       display: none;
