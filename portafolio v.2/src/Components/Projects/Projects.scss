@@ -1,6 +1,9 @@
 @import "../scss/abstracts/mixins.scss";
 @import "../scss/abstracts/variables.scss";
 
+.full-size {
+  @include full-page;
+}
 .projects {
   background: rgb(37, 37, 37);
   h1 {
@@ -37,6 +40,7 @@
       width: 90%;
     }
     .contornoH1 {
+      margin-top: 5%;
       width: 25%;
     }
     .work {
@@ -58,6 +62,9 @@
 
 // de 821px a menor
 @media (max-width: 820px) {
+  .full-size {
+    height: auto;
+  }
   .projects {
     background: rgb(37, 37, 37);
     h1 {
@@ -86,6 +93,9 @@
 }
 
 @media (max-width: 575px) {
+  .full-size {
+    height: auto;
+  }
   .projects {
     background: rgb(37, 37, 37);
     padding: 6%;

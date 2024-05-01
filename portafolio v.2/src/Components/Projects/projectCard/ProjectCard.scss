@@ -441,12 +441,35 @@
     padding: 0;
     margin: 2%;
   }
-
+  .description {
+    font-size: 18px;
+  }
   .buttonVisita {
     width: 25% !important;
   }
   .buttonVisita:hover {
     width: 25% !important;
+    .textV {
+      font-size: 16px;
+    }
+    .iconButton {
+      display: none;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .projectCard {
+    padding: 0;
+    margin: 2%;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .buttonVisita {
+    width: 34% !important;
+  }
+  .buttonVisita:hover {
+    width: 34% !important;
     .textV {
       font-size: 16px;
     }

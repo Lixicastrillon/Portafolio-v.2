@@ -1,130 +1,162 @@
 @import "../scss/abstracts/mixins.scss";
 @import "../scss/abstracts/variables.scss";
-@media (min-width: 821px) {
-  .about {
-    position: relative;
-    z-index: 2;
-    background: rgb(37, 37, 37);
-    h1 {
-      @include titleH1;
-    }
-    p {
-      @include pG;
-    }
-  }
 
-  .contornoH1 {
-    @include contornoH1;
-  }
+.full-size-about {
+  width: 100%;
+  height: 100vh;
+}
 
-  .about1 {
-    display: flex;
-    justify-content: center;
+.about {
+  position: relative;
+  z-index: 2;
+  background: rgb(37, 37, 37);
+  h1 {
+    @include titleH1;
   }
-
-  .box-description {
-    // background: var(--color-2000);
-    border-radius: 15px;
-    padding: 4%;
-  }
-  .w-45 {
-    width: 45%;
-  }
-
-  .icon-tecn {
-    margin-bottom: 7%;
-  }
-
-  .icons-tech {
-    font-size: 40px;
-    color: var(--color-2000);
-  }
-
-  .text-tecn {
-    h4 {
-      font-size: 11px;
-      color: var(--color-base);
-    }
-  }
-
-  .containerTecnology {
-    perspective: 300px;
-    width: 350px;
-    height: 230px;
-    position: relative;
-  }
-  .cardTecnology {
-    background: var(--color-500);
-    top: 160px;
-    left: 190px;
-    position: absolute;
-    width: 70px;
-    height: 85px;
-    border: 1px solid var(--color-500);
-    border-radius: 15px;
-    // margin: 2%;
-    cursor: pointer;
-    animation: carrusel 26s linear infinite;
-  }
-  .cardTecnology:hover {
-    box-shadow: 0px 0px 10px var(--color-500);
-  }
-  @keyframes carrusel {
-    from {
-      transform: rotateY(360deg) translateZ(163px);
-      z-index: 10;
-    }
-    50% {
-      z-index: -10;
-    }
-    to {
-      transform: rotateX(0deg) translateZ(163px);
-      z-index: 10;
-    }
-  }
-
-  .style01 {
-    animation-delay: -26s;
-  }
-  .style02 {
-    animation-delay: -24s;
-  }
-  .style03 {
-    animation-delay: -22s;
-  }
-  .style04 {
-    animation-delay: -20s;
-  }
-  .style05 {
-    animation-delay: -18s;
-  }
-  .style06 {
-    animation-delay: -16s;
-  }
-  .style07 {
-    animation-delay: -14s;
-  }
-  .style08 {
-    animation-delay: -12s;
-  }
-  .style09 {
-    animation-delay: -10s;
-  }
-  .style10 {
-    animation-delay: -8s;
-  }
-  .style11 {
-    animation-delay: -6s;
-  }
-  .style12 {
-    animation-delay: -4s;
-  }
-  .style13 {
-    animation-delay: -2s;
+  p {
+    @include pG;
   }
 }
 
+.contornoH1-about {
+  width: 22%;
+  border: 0.5px solid var(--color-500);
+  border-radius: 15px;
+  margin-bottom: 5%;
+  z-index: 3;
+}
+
+.about1 {
+  display: flex;
+  justify-content: center;
+}
+
+.box-description {
+  // background: var(--color-2000);
+  border-radius: 15px;
+  padding: 4%;
+}
+.w-45 {
+  width: 45%;
+}
+
+.icon-tecn {
+  margin-bottom: 7%;
+}
+
+.icons-tech {
+  font-size: 40px;
+  color: var(--color-2000);
+}
+
+.text-tecn {
+  h4 {
+    font-size: 11px;
+    color: var(--color-base);
+  }
+}
+
+.containerTecnology {
+  perspective: 300px;
+  width: 350px;
+  height: 230px;
+  position: relative;
+}
+.cardTecnology {
+  background: var(--color-500);
+  top: 160px;
+  left: 190px;
+  position: absolute;
+  width: 70px;
+  height: 85px;
+  border: 1px solid var(--color-500);
+  border-radius: 15px;
+  // margin: 2%;
+  cursor: pointer;
+  animation: carrusel 26s linear infinite;
+}
+.cardTecnology:hover {
+  box-shadow: 0px 0px 10px var(--color-500);
+}
+@keyframes carrusel {
+  from {
+    transform: rotateY(360deg) translateZ(163px);
+    z-index: 10;
+  }
+  50% {
+    z-index: -10;
+  }
+  to {
+    transform: rotateX(0deg) translateZ(163px);
+    z-index: 10;
+  }
+}
+
+.style01 {
+  animation-delay: -26s;
+}
+.style02 {
+  animation-delay: -24s;
+}
+.style03 {
+  animation-delay: -22s;
+}
+.style04 {
+  animation-delay: -20s;
+}
+.style05 {
+  animation-delay: -18s;
+}
+.style06 {
+  animation-delay: -16s;
+}
+.style07 {
+  animation-delay: -14s;
+}
+.style08 {
+  animation-delay: -12s;
+}
+.style09 {
+  animation-delay: -10s;
+}
+.style10 {
+  animation-delay: -8s;
+}
+.style11 {
+  animation-delay: -6s;
+}
+.style12 {
+  animation-delay: -4s;
+}
+.style13 {
+  animation-delay: -2s;
+}
+
+@media (max-width: 1199px) {
+  .full-size-about {
+    height: 70vh;
+  }
+  .about {
+    .contornoH1-about {
+      width: 28%;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .about {
+    .contornoH1-about {
+      width: 36%;
+    }
+  }
+
+  .full-size-about {
+    height: 70vh;
+  }
+}
 @media (max-width: 820px) {
+  .full-size-about {
+    height: 70vh;
+  }
   .about {
     position: relative;
     z-index: 2;
@@ -139,10 +171,9 @@
     }
   }
 
-  .contornoH1 {
-    @include contornoH1;
-    margin-top: 12%;
-    width: 35%;
+  .contornoH1-about {
+    width: 30%;
+    margin-top: 5%;
   }
 
   .fondo {
@@ -202,8 +233,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 35%;
-    left: -15%;
+    top: 33%;
+    left: -20%;
   }
   @keyframes carrusel {
     from {
@@ -267,9 +298,8 @@
       @include titleH1;
       font-size: 25px;
     }
-    .contornoH1 {
+    .contornoH1-about {
       width: 38%;
-      margin-top: 18%;
     }
   }
 }

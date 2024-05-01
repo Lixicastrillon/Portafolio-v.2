@@ -7,8 +7,8 @@ interface AboutProps {
 
 const AboutMe = ({ skill }: AboutProps) => {
   return (
-    <div className="about container full-size d-flex flex-column align-items-center">
-      <div className="contornoH1">
+    <div className="about container full-size-about d-flex flex-column align-items-center">
+      <div className="contornoH1-about">
         <h1>Habilidades</h1>
       </div>
       <div className=" about1 w-100">
